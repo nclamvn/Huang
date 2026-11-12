@@ -42,3 +42,7 @@ Thư viện ngoài: three.js r128 và OrbitControls, tải từ CDN.
 - Trục thời gian gán mốc xuất hiện cho từng nút theo dòng sự kiện, là xấp xỉ.
 
 Nguyễn Cảnh Lâm
+
+## Giấy phép
+
+MIT. Xem tệp `LICENSE`. Giấy phép áp cho mã nguồn và dữ liệu do tác giả biên soạn. Các bài báo được dẫn nguồn thuộc về hãng tin của chúng.
