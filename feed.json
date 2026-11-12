@@ -1,7 +1,39 @@
 {
- "updated": "13/11 05:29",
+ "updated": "13/11 06:40",
  "stockLabel": "12/11",
  "news": [
+  {
+   "d": "13/11",
+   "src": "Reuters",
+   "url": "https://www.staradvertiser.com/2026/11/12/breaking-news/white-house-weighs-howard-lutnicks-future-as-commerce-secretary/",
+   "direct": false,
+   "title": "Reuters: Nhà Trắng bàn chuyện có nên để Lutnick rời ghế Bộ trưởng Thương mại",
+   "sum": "Hai nguồn thạo tin nói với Reuters rằng các quan chức cấp cao Nhà Trắng đang thảo luận việc có nên buộc Howard Lutnick ra đi. Một quan chức Nhà Trắng nói Tổng thống Trump vẫn hoàn toàn tin tưởng ông. Bộ Thương mại chưa phản hồi. Chỉ trích tập trung vào việc chính quyền chưa đưa DeepSeek, CXMT cùng hơn 100 công ty Trung Quốc bị gắn cờ vào danh sách đen thương mại, và danh sách này chưa có bổ sung nào từ tháng 10/2025. Warren và Coons yêu cầu Lutnick, Rubio và Stephen Miller lưu giữ tài liệu về xuất khẩu chip NVIDIA sang Trung Quốc. Wyden và Neal mở điều tra các giấy phép, gọi thỏa thuận H200 đổi phần trăm doanh thu là thuế xuất khẩu vi hiến. Megaspeed đã mua hơn 4,8 tỷ USD chip NVIDIA từ tháng 6/2024.",
+   "why": "Lần đầu có tin chính Nhà Trắng cân nhắc vị trí của người nắm quyền cấp phép xuất khẩu chip.",
+   "nodes": [
+    "lutnick",
+    "commerce",
+    "trump",
+    "warren",
+    "megaspeed"
+   ]
+  },
+  {
+   "d": "13/11",
+   "src": "Reuters",
+   "url": "https://www.investing.com/news/stock-market-news/explainertougher-curbs-on-ai-chip-sales-to-china-likely-after-nvidia-ceo-resigns-5022981",
+   "direct": false,
+   "title": "Reuters giải thích: bốn dự luật có thể siết chip AI sang Trung Quốc sau khi Huang từ chức",
+   "sum": "AI Overwatch Act của Warren và Banks cho Quốc hội vai trò lớn hơn khi quy định xuất khẩu thay đổi, nên việc nới bán chip NVIDIA sẽ khó hơn. Chip Security Act buộc hãng chip theo dõi vị trí bộ xử lý AI cao cấp và báo khi chip có thể đã tới tay bên bị cấm. Match Act gây sức ép để Hà Lan và Nhật hạn chế bán và bảo trì thiết bị làm chip cho Trung Quốc. Remote Access Security Act cho Bộ Thương mại quản việc công ty Trung Quốc thuê năng lực tính toán ở trung tâm dữ liệu nước ngoài, đã qua Hạ viện hồi tháng 1 và đang chờ Thượng viện. Ba dự luật đầu đã nằm trong bản luật quốc phòng của Thượng viện. Bài không nêu ngày bỏ phiếu. NVIDIA từng nói Remote Access Security Act có thể ảnh hưởng đáng kể tới kinh doanh, và doanh thu trung tâm dữ liệu của hãng tại Trung Quốc hiện gần bằng không.",
+   "why": "Gom bốn đường siết vào một chỗ: bán chip, theo dõi chip, thiết bị làm chip và thuê tính toán từ xa.",
+   "nodes": [
+    "congress",
+    "overwatch",
+    "chipsec",
+    "match",
+    "ndaa"
+   ]
+  },
   {
    "d": "13/11",
    "direct": true,
