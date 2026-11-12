@@ -1,0 +1,16 @@
+{
+  "headers": [
+    {
+      "source": "/vendor/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/(styles.css|app.js|data.js|content.js)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=300, stale-while-revalidate=86400" }]
+    },
+    {
+      "source": "/feed.json",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=60, stale-while-revalidate=600" }]
+    }
+  ]
+}

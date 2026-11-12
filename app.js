@@ -357,7 +357,7 @@ const safeUrl=u=>/^https:\/\//.test(u)?u:'#';
 function renderBars(){
   $('#tick').innerHTML=`<button data-min="tick" title="${feed.live?'Cập nhật '+esc(feed.updated):'Tin chốt ngày 12/11/2026'}. Bấm để thu gọn hoặc mở lại.">Tin nóng${feed.live&&feed.updated?' · '+esc(feed.updated):''}</button><div class="run"><div>${twice(news.map((n,i)=>`<button data-i="${i}"><em>${esc(n.d)} · ${esc(n.src)}</em>${esc(n.title)}</button>`).join(''))}</div></div>`;
   const f=v=>(v>0?'+':'−')+Math.abs(v).toLocaleString('vi-VN',{maximumFractionDigits:2})+'%';
-  $('#stk').innerHTML=`<button data-min="stk" title="Biến động theo các hãng tin, không phải giá trực tiếp. Bấm để thu gọn hoặc mở lại.">Cổ phiếu · ${esc(feed.label)}</button><div class="run"><div>${twice(stocks.map(s=>`<button ${byId[s.node]?`data-n="${s.node}"`:''} title="${esc(s.name)}: ${s.pct>0?'tăng':'giảm'} ${Math.abs(s.pct)}%${s.note?', '+esc(s.note):''}"><b>${esc(s.sym)}</b><i>${esc(s.name)}</i><span class="${s.pct>0?'up':'dn'}">${s.pct>0?'▲':'▼'} ${f(s.pct)}</span>${s.note?`<span>${esc(s.note)}</span>`:''}</button>`).join(''))}</div></div>`;
+  $('#stk').innerHTML=`<button data-min="stk" title="${feed.quotes?'Biến động so với phiên trước, nguồn Yahoo Finance, có thể trễ. Mã không có giá trực tiếp giữ số theo các hãng tin.':'Biến động theo các hãng tin, không phải giá trực tiếp.'} Bấm để thu gọn hoặc mở lại.">Cổ phiếu · ${esc(feed.label)}</button><div class="run"><div>${twice(stocks.map(s=>`<button ${byId[s.node]?`data-n="${s.node}"`:''} title="${esc(s.name)}: ${s.pct>0?'tăng':'giảm'} ${Math.abs(s.pct)}%${s.note?', '+esc(s.note):''}"><b>${esc(s.sym)}</b><i>${esc(s.name)}</i><span class="${s.pct>0?'up':'dn'}">${s.pct>0?'▲':'▼'} ${f(s.pct)}</span>${s.note?`<span>${esc(s.note)}</span>`:''}</button>`).join(''))}</div></div>`;
   applyBars()}
 function applyBars(){['tick','stk'].forEach(k=>{const off=prefs[k]===false;$('#'+k).classList.toggle('min',off);document.body.classList.toggle('no-'+k,off)})}
 let ni=0;
@@ -407,6 +407,7 @@ addEventListener('keydown',e=>{if(e.target.matches('input'))return;const i=PATHS
 
 /* ---------- 7. NGUỒN TIN TRỰC TIẾP: đọc từ kho dữ liệu của trang, do một tác vụ định kỳ ghi vào. Không có thì dùng bản đóng sẵn. ---------- */
 (async function liveFeed(){
+  const QUOTES_URL='https://nvidia-monitor.vercel.app/api/fork-quotes';
   const db=window.claude&&claude.use?await claude.use('db').catch(()=>null):null;
   const str=(v,max)=>typeof v==='string'?v.slice(0,max):'';
   const arr=v=>Array.isArray(v)?v:[];
@@ -418,7 +419,16 @@ addEventListener('keydown',e=>{if(e.target.matches('input'))return;const i=PATHS
     if(!$('#news').hidden)closeNews();renderBars()};
   /* trong artifact: nghe kho dữ liệu. Chạy độc lập (Vercel): đọc feed.json nằm cạnh trang. */
   if(db)db.doc('feed/current').onSnapshot(s=>apply(s.exists&&s.data()),()=>{});
-  else fetch('feed.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(apply).catch(()=>{});
+  else{
+    /* bản đóng sẵn trước (cùng yêu cầu với thẻ preload trong index.html), rồi phủ giá trực tiếp lên dải cổ phiếu. */
+    await fetch('feed.json').then(r=>r.ok?r.json():null).then(apply).catch(()=>{});
+    liveQuotes();setInterval(()=>{if(!document.hidden)liveQuotes()},60000)}
+  /* Giá trực tiếp cho bản chạy độc lập: lấy từ dịch vụ giá của trang AI Chip Monitor (Yahoo Finance). Chỉ ghi đè mã đã có trong dải; lỗi thì giữ số đang hiện. */
+  function liveQuotes(){
+    fetch(QUOTES_URL).then(r=>r.ok?r.json():null).then(m=>{
+      const by={};arr(m&&m.quotes).forEach(q=>{if(q&&typeof q.symbol==='string'&&Number.isFinite(q.changePct))by[q.symbol]=q.changePct});
+      let hit=0;stocks=stocks.map(s=>s.sym in by?(hit++,{...s,pct:Math.round(by[s.sym]*100)/100,note:''}):s);
+      if(hit){feed.label='trực tiếp';feed.quotes=true;renderBars()}}).catch(()=>{})}
 })();
 
 /* ---------- KHỞI ĐỘNG ---------- */
