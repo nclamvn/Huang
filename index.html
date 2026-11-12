@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Bê bối CEO Nvidia · Đồ thị quyền lực chip Mỹ Trung</title>
+<meta name="description" content="Đồ thị tri thức 3D về vụ Jensen Huang rời NVIDIA và cuộc đua chip AI Mỹ Trung. 91 nút, 147 quan hệ, mỗi quan hệ kèm bậc chứng cứ và nguồn.">
+<meta name="theme-color" content="#05070A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Noto+Serif:wght@500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+  <div class="bar tick blur" id="tick" aria-label="Tin nóng"></div>
+  <div class="bar stk blur" id="stk" aria-label="Cổ phiếu liên quan"></div>
+  <section class="view" id="view" aria-label="Đồ thị 3D"><canvas id="gl"></canvas><div class="cap" id="cap" aria-live="polite" hidden></div></section>
+  <header class="top">
+    <div class="brand"><span>Bê bối CEO <i>Nvidia</i></span></div>
+    <nav class="nav" id="nav" aria-label="Nhánh giải thích"></nav>
+    <input class="search blur" id="q" type="search" list="ql" placeholder="Tìm nút  /" aria-label="Tìm nút"><datalist id="ql"></datalist>
+    <button class="pill gear blur" id="gear" aria-label="Cài đặt hiển thị" aria-expanded="false">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg>
+    </button>
+  </header>
+  <div class="set" id="set" hidden></div>
+  <footer class="dock">
+    <div class="guide blur" id="guide" aria-label="Hành trình"></div>
+    <div class="time" id="time" aria-label="Trục thời gian"></div>
+  </footer>
+  <div class="detail" id="detail" role="dialog" aria-label="Chi tiết nút" hidden></div>
+  <aside class="panel">
+    <div class="tabs" id="tabs" role="tablist">
+      <button role="tab" data-tab="main" aria-selected="true">Giải thích</button>
+      <button role="tab" data-tab="verify" aria-selected="false">Kiểm chứng</button>
+      <button role="tab" data-tab="src" aria-selected="false">Nguồn</button>
+    </div>
+    <div class="body" id="body"></div>
+  </aside>
+  <div class="news" id="news" role="dialog" aria-modal="true" aria-label="Tin chi tiết" hidden></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="data.js"></script>
+<script src="content.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

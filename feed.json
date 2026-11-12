@@ -1,0 +1,314 @@
+{
+ "updated": "12/11 23:55",
+ "stockLabel": "12/11",
+ "news": [
+  {
+   "d": "12/11",
+   "src": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/12/nvidias-jensen-huang-resigns-chipmaker-names-cfo-colette-kress-as-interim-ceo/",
+   "direct": true,
+   "title": "Jensen Huang từ chức, Giám đốc tài chính Colette Kress tạm quyền",
+   "sum": "NVIDIA xác nhận Jensen Huang rời ghế Chủ tịch kiêm CEO. Hội đồng quản trị chấp nhận đơn từ ngày 11/11 theo hồ sơ nộp cơ quan quản lý. Colette Kress làm CEO tạm quyền và vẫn giữ chức Giám đốc tài chính. Harvey Jones, thành viên hội đồng từ năm 1993, trở thành Chủ tịch hội đồng quản trị đầu tiên của công ty.",
+   "why": "Lần đầu sau 33 năm NVIDIA không do người sáng lập điều hành, và cũng là lần đầu ghế chủ tịch tách khỏi ghế CEO.",
+   "nodes": [
+    "eresign",
+    "kress",
+    "jones"
+   ]
+  },
+  {
+   "d": "12/11",
+   "src": "Reuters",
+   "url": "https://www.marketscreener.com/news/global-ai-stocks-sink-as-nvidia-crisis-deepens-sector-selloff-ce785ed8dc80f526",
+   "direct": true,
+   "title": "Cổ phiếu AI toàn cầu lao dốc, NVIDIA xuống dưới 4 nghìn tỷ USD",
+   "sum": "Cổ phiếu NVIDIA giảm khoảng 10% trước giờ mở cửa và đã mất khoảng 300 tỷ USD vốn hóa kể từ khi hội đồng quản trị công bố điều tra. CoreWeave, Nebius, Micron cùng giảm mạnh, trong khi AMD và Broadcom tăng nhẹ. Hệ số giá trên lợi nhuận dự phóng của NVIDIA về quanh 12, thấp nhất từ cuối năm 2012.",
+   "why": "Nhóm cổ phiếu AI vốn đã yếu từ sau bầu cử giữa nhiệm kỳ. Cú sốc lãnh đạo chồng lên nỗi lo siết trung tâm dữ liệu.",
+   "nodes": [
+    "esell",
+    "nvidia",
+    "neocloud",
+    "amd"
+   ]
+  },
+  {
+   "d": "12/11",
+   "src": "Forbes",
+   "url": "https://www.forbes.com/sites/siladityaray/2026/11/12/china-warns-against-renewed-us-chip-curbs-amid-nvidia-jensen-huang-scandal/",
+   "direct": true,
+   "title": "Bắc Kinh: Mỹ nên ngừng dựng \"câu chuyện gián điệp Trung Quốc\"",
+   "sum": "Người phát ngôn Bộ Ngoại giao Trung Quốc Mao Ninh nói Mỹ không nên lấy cáo buộc gián điệp làm cớ áp thêm hạn chế công nghệ. Phát biểu đưa ra khi được hỏi về tác động của vụ việc tới quan hệ hai nước trước cuộc gặp giữa Trump và Tập Cận Bình tại Thâm Quyến vào tuần sau. Cổ phiếu Alibaba, Tencent và các hãng AI Trung Quốc cùng giảm trong ngày.",
+   "why": "Bắc Kinh lo hệ quả chính sách hơn là bản thân bê bối. Thượng đỉnh Thâm Quyến là phép thử gần nhất.",
+   "nodes": [
+    "mfa",
+    "esummit",
+    "xi",
+    "alibaba"
+   ]
+  },
+  {
+   "d": "12/11",
+   "src": "Reuters",
+   "url": "https://www.timeslive.co.za/news/world/2026-11-12-chinese-ai-firms-rush-to-secure-nvidia-chip-capacity-as-spy-scandal-stirs-fear-of-us-curbs/",
+   "direct": true,
+   "title": "Doanh nghiệp AI Trung Quốc gấp rút giữ chỗ GPU NVIDIA ở nước ngoài",
+   "sum": "Ba nguồn tin cho biết nhiều công ty AI Trung Quốc đang liên hệ các trung tâm dữ liệu ngoài nước để đặt trước năng lực tính toán chạy chip NVIDIA, vì lo Washington siết cả quyền truy cập từ xa. Dự luật trao quyền này cho Bộ Thương mại đã qua Hạ viện từ tháng 1 và đang chờ Thượng viện. Chợ xám chip trong nước cũng nóng lên.",
+   "why": "Phản ứng đầu tiên của doanh nghiệp Trung Quốc là phòng thủ, không phải ăn mừng.",
+   "nodes": [
+    "cloud",
+    "demand",
+    "rasa",
+    "grey"
+   ]
+  },
+  {
+   "d": "12/11",
+   "src": "Reuters",
+   "url": "https://www.933thedrive.com/2026/11/12/nvidias-asian-supply-chain-prepares-for-life-after-huang/",
+   "direct": true,
+   "title": "Chuỗi cung ứng châu Á chuẩn bị cho thời kỳ sau Huang",
+   "sum": "Cổ phiếu TSMC và SK Hynix giảm trong ngày. Một lãnh đạo nhà cung cấp Đài Loan nói họ vẫn đáp ứng mọi công suất NVIDIA cần nhưng lo CEO mới sẽ bớt quyết liệt. Giới phân tích lưu ý chip cho một đến hai năm tới đã thiết kế xong và đang sản xuất, nên chi tiêu năm 2027 của khách hàng ít phụ thuộc vào người cầm lái.",
+   "why": "Rủi ro nằm ở các cam kết mở rộng dài hạn mà Huang tự tay thúc đẩy, không nằm ở sản lượng trước mắt.",
+   "nodes": [
+    "tsmc",
+    "skhynix",
+    "taiwan",
+    "foxconn"
+   ]
+  },
+  {
+   "d": "11/11",
+   "src": "Reuters",
+   "url": "https://www.investing.com/news/stock-market-news/whos-next-ceo-at-nvidia-top-engineer-and-cfo-favored-as-candidates-5020356",
+   "direct": true,
+   "title": "Ai sẽ thay Huang: kỹ sư trưởng Ian Buck và Colette Kress dẫn đầu",
+   "sum": "Giới phân tích coi Ian Buck, người dẫn dắt nền tảng CUDA và mảng sản phẩm AI cho các trung tâm dữ liệu lớn, là lựa chọn dài hạn mạnh nhất. Colette Kress được xem là phương án chuyển tiếp tự nhiên. CEO Arm Rene Haas, từng làm ở NVIDIA, là cái tên bên ngoài được nhắc nhiều nhất. Có ý kiến đề xuất mô hình hai đồng CEO.",
+   "why": "Hội đồng quản trị phải chọn giữa ổn định tài chính trước mắt và giữ bản sắc kỹ thuật lâu dài.",
+   "nodes": [
+    "buck",
+    "kress",
+    "haas",
+    "nvboard"
+   ]
+  },
+  {
+   "d": "12/11",
+   "src": "Yahoo Finance",
+   "url": "https://finance.yahoo.com/markets/article/planning-nvidia-investigations-top-democrats-tell-trump-administration-to-preserve-all-records-141932940.html",
+   "direct": true,
+   "title": "Thượng nghị sĩ Dân chủ yêu cầu chính quyền bảo toàn hồ sơ về NVIDIA",
+   "sum": "Elizabeth Warren và Chris Coons gửi thư cho Bộ trưởng Thương mại, Ngoại trưởng và Chánh văn phòng Nhà Trắng, yêu cầu giữ nguyên mọi tài liệu về xuất khẩu chip sang Trung Quốc và về vụ việc của Huang. Hai người dự kiến chủ trì hai ủy ban có quyền triệu tập khi Quốc hội mới nhậm chức. Một số tiếng nói Cộng hòa cũng đòi Bộ trưởng Thương mại giải trình.",
+   "why": "Đây là bước mở đường cho các cuộc điều tra có quyền triệu tập từ tháng 1/2027.",
+   "nodes": [
+    "eletter",
+    "warren",
+    "coons",
+    "lutnick"
+   ]
+  },
+  {
+   "d": "11/11",
+   "src": "Axios",
+   "url": "https://www.axios.com/2026/11/11/trump-lutnick-nvidia-china-chip-export-controls",
+   "direct": false,
+   "title": "Trump ba lần chấp thuận siết chip, Bộ trưởng Thương mại bị cho là trì hoãn",
+   "sum": "Theo Axios, dẫn các nguồn cấp cao giấu tên, Tổng thống đã nhiều lần đồng ý các biện pháp chống chuyển hướng chip NVIDIA sang Trung Quốc nhưng Bộ Thương mại chậm thực thi. Bài báo mô tả một cuộc họp tại Nhà Trắng nơi Bộ trưởng Tài chính chất vấn về trường hợp Megaspeed.",
+   "why": "Đường nứt chính sách nằm ngay trong nội các, không chỉ giữa hai đảng. Thông tin dựa hoàn toàn vào nguồn giấu tên.",
+   "nodes": [
+    "lutnick",
+    "trump",
+    "bessent",
+    "megaspeed"
+   ]
+  },
+  {
+   "d": "11/11",
+   "src": "Korea Times",
+   "url": "https://www.koreatimes.co.kr/world/20261111/us-lawmakers-push-for-tougher-china-export-controls-in-defense-bill-amid-nvidia-scrutiny",
+   "direct": true,
+   "title": "Nghị sĩ hai đảng đẩy ba dự luật kiểm soát chip vào luật quốc phòng",
+   "sum": "Chip Security Act, AI Overwatch Act và MATCH Act đều đã nằm trong bản luật ủy quyền quốc phòng của Thượng viện. Lãnh đạo Dân chủ Hạ viện cam kết giữ các điều khoản này trong bản cuối. Nhà Trắng có góp ý kỹ thuật nhưng Tổng thống chưa công khai ủng hộ.",
+   "why": "Đây là đường lập pháp ngắn nhất để siết chip, có thể xong trước khi Quốc hội mới nhậm chức.",
+   "nodes": [
+    "ndaa",
+    "chipsec",
+    "overwatch",
+    "match"
+   ]
+  },
+  {
+   "d": "10/11",
+   "src": "Newsweek",
+   "url": "https://www.newsweek.com/trump-jensen-huang-spy-claim-nvidia-25m-ballroom-donation-12696326",
+   "direct": true,
+   "title": "Khoản đóng góp 25 triệu USD của NVIDIA cho Nhà Trắng bị soi lại",
+   "sum": "Tài liệu do Washington Post công bố cho thấy NVIDIA cam kết 25 triệu USD cho dự án phòng khiêu vũ Nhà Trắng từ tháng 10/2025 và từng xin giấu tên. New York Times viết Tổng thống được báo cáo về nghi vấn tình báo từ khoảng một năm trước, trong khi ông nói mới biết gần đây. Bộ Tư pháp được cho là đã mở điều tra hình sự Megaspeed.",
+   "why": "Trọng tâm chuyển từ đời tư sang câu hỏi về xung đột lợi ích và ai đã biết gì, từ lúc nào.",
+   "nodes": [
+    "eball",
+    "ebrief",
+    "doj",
+    "schumer"
+   ]
+  },
+  {
+   "d": "7/11",
+   "src": "Al Jazeera",
+   "url": "https://www.aljazeera.com/economy/2026/11/7/how-the-us-midterm-elections-reflected-resistance-to-data-centres",
+   "direct": true,
+   "title": "Bầu cử giữa nhiệm kỳ phản ánh làn sóng chống trung tâm dữ liệu",
+   "sum": "Trong 41 cuộc bỏ phiếu địa phương về trung tâm dữ liệu, cử tri gần như ở đâu cũng chọn hạn chế. Nhiều ứng viên thắng cử ở Ohio và Texas đã vận động bằng lập trường siết hoặc tạm dừng cấp phép. Một nghiên cứu của Fed Dallas ước tính trung tâm dữ liệu làm giá điện bán buôn tăng 6,9%.",
+   "why": "Hạ tầng AI đã thành vấn đề bỏ phiếu, độc lập với vụ NVIDIA.",
+   "nodes": [
+    "eballot",
+    "voters",
+    "states",
+    "power"
+   ]
+  },
+  {
+   "d": "6/11",
+   "src": "TNW",
+   "url": "https://thenextweb.com/news/nvidia-h200-chips-hong-kong-china-import-approval",
+   "direct": true,
+   "title": "Khoảng 600.000 chip H200 nằm chờ ở Hồng Kông",
+   "sum": "Theo Reuters, Bắc Kinh chưa cho nhập đại trà dòng chip mà Mỹ đã cho phép bán có điều kiện, vì muốn doanh nghiệp trong nước chuyển sang chip nội, nhất là cho khâu suy luận. Số chip cuối cùng được duyệt có thể dưới 200.000. NVIDIA đã ghi nhận khoản phí 400 triệu USD cho hàng tồn.",
+   "why": "Rào cản không chỉ đến từ Washington. Chính Bắc Kinh cũng đang hãm việc mua chip Mỹ.",
+   "nodes": [
+    "h200",
+    "hongkong",
+    "beijing",
+    "hself"
+   ]
+  },
+  {
+   "d": "14/10",
+   "src": "TechNode",
+   "url": "https://technode.com/2026/10/14/nvidias-china-ai-chip-share-falls-to-34-as-huawei-reaches-28/",
+   "direct": true,
+   "title": "Thị phần chip AI của NVIDIA tại Trung Quốc còn 34%, Huawei lên 28%",
+   "sum": "Số liệu IDC cho nửa đầu năm 2026 ghi nhận NVIDIA giao 678.000 bộ tăng tốc AI tại Trung Quốc, giảm 44% so với cùng kỳ. Huawei giao 572.000 bộ, tăng từ hơn 300.000. Chín trong mười một nhà cung cấp nội địa được theo dõi đều tăng sản lượng.",
+   "why": "Khoảng cách chỉ còn sáu điểm phần trăm. Đây là con số nền cho mọi tranh luận về cấm hay bán.",
+   "nodes": [
+    "demand",
+    "huawei",
+    "cambricon",
+    "nvidia"
+   ]
+  }
+ ],
+ "stocks": [
+  {
+   "sym": "NVDA",
+   "name": "NVIDIA",
+   "pct": -10,
+   "note": "trước giờ mở cửa",
+   "node": "nvidia"
+  },
+  {
+   "sym": "AMD",
+   "name": "AMD",
+   "pct": 2,
+   "note": "",
+   "node": "amd"
+  },
+  {
+   "sym": "AVGO",
+   "name": "Broadcom",
+   "pct": 1.4,
+   "note": "",
+   "node": "broadcom"
+  },
+  {
+   "sym": "CRWV",
+   "name": "CoreWeave",
+   "pct": -13.6,
+   "note": "",
+   "node": "neocloud"
+  },
+  {
+   "sym": "NBIS",
+   "name": "Nebius",
+   "pct": -20,
+   "note": "",
+   "node": "neocloud"
+  },
+  {
+   "sym": "MU",
+   "name": "Micron",
+   "pct": -5.8,
+   "note": "",
+   "node": "esell"
+  },
+  {
+   "sym": "SNDK",
+   "name": "Sandisk",
+   "pct": -8.5,
+   "note": "",
+   "node": "esell"
+  },
+  {
+   "sym": "WDC",
+   "name": "Western Digital",
+   "pct": -5.2,
+   "note": "",
+   "node": "esell"
+  },
+  {
+   "sym": "TSM",
+   "name": "TSMC",
+   "pct": -2,
+   "note": "",
+   "node": "tsmc"
+  },
+  {
+   "sym": "000660",
+   "name": "SK Hynix",
+   "pct": -1.6,
+   "note": "",
+   "node": "skhynix"
+  },
+  {
+   "sym": "005930",
+   "name": "Samsung",
+   "pct": 0.8,
+   "note": "",
+   "node": "samsung"
+  },
+  {
+   "sym": "9988",
+   "name": "Alibaba",
+   "pct": -6.76,
+   "note": "Hồng Kông",
+   "node": "alibaba"
+  },
+  {
+   "sym": "0700",
+   "name": "Tencent",
+   "pct": -2.64,
+   "note": "Hồng Kông",
+   "node": "tencent"
+  },
+  {
+   "sym": "AI",
+   "name": "Z.AI",
+   "pct": -9.05,
+   "note": "",
+   "node": "demand"
+  },
+  {
+   "sym": "AI",
+   "name": "MiniMax",
+   "pct": -7.8,
+   "note": "",
+   "node": "demand"
+  },
+  {
+   "sym": "NQ",
+   "name": "Nasdaq tương lai",
+   "pct": -0.66,
+   "note": "",
+   "node": "esell"
+  }
+ ]
+}
