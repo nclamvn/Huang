@@ -1,5 +1,5 @@
 {
- "updated": "14/11 09:45",
+ "updated": "14/11 09:50",
  "stockLabel": "13/11",
  "news": [
   {
@@ -23,8 +23,8 @@
    "direct": false,
    "url": "https://www.yahoo.com/news/politics/articles/commerce-dept-howard-lutnick-testify-154718177.html",
    "title": "Lutnick đồng ý ra điều trần trước Ủy ban Ngân hàng Thượng viện, Huang cũng được mời",
-   "sum": "Chủ tịch Ủy ban Ngân hàng Thượng viện Tim Scott gửi thư ngày 12/11 mời Howard Lutnick và Jensen Huang trả lời về an ninh quốc gia và việc bảo vệ công nghệ nhạy cảm. Người phát ngôn Bộ Thương mại nói ông Lutnick chủ động đồng ý ra điều trần tự nguyện. Fox Business và Fortune nêu ngày 10/12 cho phiên công khai. New York Post viết hai phiên riêng vào đầu tháng 12. Thượng nghị sĩ Jack Reed đòi minh bạch các thỏa thuận tài trợ của NVIDIA.",
-   "why": "Phiên công khai đầu tiên về vụ việc đã có lịch. Các nguồn còn lệch nhau về việc hai người ra chung hay riêng.",
+   "sum": "Chủ tịch Ủy ban Ngân hàng Thượng viện Tim Scott gửi thư ngày 12/11 mời Howard Lutnick và Jensen Huang trả lời về an ninh quốc gia và việc bảo vệ công nghệ nhạy cảm. Người phát ngôn Bộ Thương mại nói ông Lutnick chủ động đồng ý ra điều trần tự nguyện. Theo Investing.com, thư mời ông Huang ra ngày 3/12 và ông Lutnick ra ngày 10/12. Fox Business và Fortune cũng nêu ngày 10/12 cho phiên công khai của ông Lutnick. Thượng nghị sĩ Jack Reed đòi minh bạch các thỏa thuận tài trợ của NVIDIA.",
+   "why": "Hai phiên công khai đầu tiên về vụ việc đã có lịch. Ông Huang chưa xác nhận công khai việc nhận lời.",
    "nodes": [
     "lutnick",
     "huang",
@@ -94,19 +94,90 @@
   },
   {
    "d": "13/11",
+   "direct": true,
+   "nodes": [
+    "congress",
+    "ndaa",
+    "overwatch",
+    "rasa"
+   ],
    "src": "Reuters",
-   "url": "https://www.staradvertiser.com/2026/11/12/breaking-news/white-house-weighs-howard-lutnicks-future-as-commerce-secretary/",
+   "sum": "Hôm thứ Năm, Chủ tịch Hạ viện Mike Johnson nói Quốc hội đang hình thành đồng thuận về việc hạn chế Trung Quốc tiếp cận chip tiên tiến. Một trợ lý Thượng viện giấu tên cho biết phe Cộng hòa muốn gắn các hạn chế xuất khẩu chip vào luật quốc phòng thường niên. Brian Mast nói nhân viên Quốc hội đã trao đổi với NVIDIA về ngày và địa điểm để Huang trình bày, dự kiến trước Lễ Tạ ơn 26/11. Bài nêu bốn dự luật đang được nhắc tới: AI Overwatch, Chip Security, Match và Remote Access Security. Bắc Kinh phủ nhận Alice Huang là gián điệp.",
+   "title": "Chủ tịch Hạ viện Johnson: Quốc hội đang hình thành đồng thuận hạn chế chip cho Trung Quốc",
+   "url": "https://www.koreatimes.co.kr/world/20261113/chinas-access-to-nvidia-chips-in-doubt-as-curbs-gain-traction-in-us-congress",
+   "why": "Người đứng đầu Hạ viện nay công khai đứng về hướng siết. Luật quốc phòng trở thành con đường chính để đưa các hạn chế chip thành luật."
+  },
+  {
+   "d": "13/11",
+   "direct": true,
+   "nodes": [
+    "trump",
+    "huang",
+    "nvboard"
+   ],
+   "src": "ANI",
+   "sum": "Trả lời Salem News Channel hôm thứ Năm, Tổng thống Trump nói vụ việc quanh Jensen Huang là điều tồi tệ và ông rất buồn khi thấy chuyện xảy ra. Trên Truth Social, ông viết Tim Cook của Apple nên kế nhiệm Huang. Ông cũng nói hoạt động tình báo giữa Mỹ và Trung Quốc không chỉ đi một chiều. Bản tin của hãng ANI không ghi phản hồi của Apple, Cook hay NVIDIA và không nhắc tới chính sách xuất khẩu chip.",
+   "title": "Trump gọi vụ Huang là điều tồi tệ, đề xuất Tim Cook về lãnh đạo NVIDIA",
+   "url": "https://www.tribuneindia.com/news/artificial-intelligence/trump-calls-jensen-huang-chinese-spy-affair-scandal-horrible-thing-says-it-is-so-sad-to-see-happen",
+   "why": "Tổng thống vẫn giữ giọng thiện cảm với Huang ngay trước chuyến đi Thâm Quyến. Việc ông nêu tên người kế nhiệm tạo thêm sức ép lên hội đồng quản trị."
+  },
+  {
+   "d": "13/11",
+   "direct": true,
+   "nodes": [
+    "doj",
+    "alice",
+    "huang"
+   ],
+   "src": "Reuters",
+   "sum": "Tại họp báo ở Washington ngày 12/11, Bộ trưởng Tư pháp Todd Blanche nói Bộ Tư pháp chưa đi tới kết luận về việc Alice Huang có làm việc cho tình báo Trung Quốc hay không. Khi được hỏi FBI có điều tra các thông tin này không, ông xác nhận là có. Reuters cho biết đã nhận diện Alice Huang trong đoạn phim về một bữa tối với Jensen Huang ở Đài Bắc ngày 22/5/2025. Bài không ghi bình luận từ Alice Huang, Jensen Huang hay NVIDIA.",
+   "title": "Bộ trưởng Tư pháp Blanche: chưa kết luận Alice Huang là gián điệp Trung Quốc",
+   "url": "https://www.yahoo.com/news/us/articles/us-justice-department-not-concluded-210033451.html",
+   "why": "Đây là phát ngôn công khai đầu tiên của người đứng đầu Bộ Tư pháp về cáo buộc cốt lõi. Cáo buộc gián điệp vẫn chưa được cơ quan nào xác nhận."
+  },
+  {
+   "d": "13/11",
+   "direct": true,
+   "nodes": [
+    "nvidia",
+    "kress",
+    "esell"
+   ],
+   "src": "TipRanks",
+   "sum": "Theo tổng hợp của TipRanks, KeyBanc, Melius, Evercore ISI, William Blair, Oppenheimer và Bernstein đều hạ đánh giá NVIDIA xuống mức trung lập. Evercore cắt giá mục tiêu từ 465 xuống 186 USD. Bernstein cắt từ 400 xuống 200 USD. Oppenheimer bỏ hẳn giá mục tiêu. Mizuho giữ khuyến nghị tích cực với mục tiêu 250 USD. Giới phân tích chờ doanh thu quý khoảng 108,8 tỷ USD và lợi nhuận 2,47 USD mỗi cổ phiếu.",
+   "title": "Sáu hãng phân tích hạ đánh giá NVIDIA trước báo cáo quý ngày 17/11",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/nvda-stock-price-forecast-top-204543429.html",
+   "why": "Phố Wall đổi quan điểm vì rủi ro lãnh đạo chứ chưa phải vì nhu cầu chip. Con số quý vẫn được kỳ vọng tăng khoảng 90% so với cùng kỳ."
+  },
+  {
+   "d": "13/11",
    "direct": false,
-   "title": "Reuters: Nhà Trắng bàn chuyện có nên để Lutnick rời ghế Bộ trưởng Thương mại",
-   "sum": "Hai nguồn thạo tin nói với Reuters rằng các quan chức cấp cao Nhà Trắng đang thảo luận việc có nên buộc Howard Lutnick ra đi. Một quan chức Nhà Trắng nói Tổng thống Trump vẫn hoàn toàn tin tưởng ông. Bộ Thương mại chưa phản hồi. Chỉ trích tập trung vào việc chính quyền chưa đưa DeepSeek, CXMT cùng hơn 100 công ty Trung Quốc bị gắn cờ vào danh sách đen thương mại, và danh sách này chưa có bổ sung nào từ tháng 10/2025. Warren và Coons yêu cầu Lutnick, Rubio và Stephen Miller lưu giữ tài liệu về xuất khẩu chip NVIDIA sang Trung Quốc. Wyden và Neal mở điều tra các giấy phép, gọi thỏa thuận H200 đổi phần trăm doanh thu là thuế xuất khẩu vi hiến. Megaspeed đã mua hơn 4,8 tỷ USD chip NVIDIA từ tháng 6/2024.",
-   "why": "Lần đầu có tin chính Nhà Trắng cân nhắc vị trí của người nắm quyền cấp phép xuất khẩu chip.",
    "nodes": [
     "lutnick",
     "commerce",
     "trump",
-    "warren",
-    "megaspeed"
-   ]
+    "warren"
+   ],
+   "src": "Reuters",
+   "sum": "Hai nguồn thạo tin nói với Reuters rằng các quan chức cấp cao Nhà Trắng đang thảo luận việc có nên buộc Howard Lutnick ra đi. Một quan chức Nhà Trắng nói Tổng thống Trump vẫn hoàn toàn tin tưởng ông. Bộ Thương mại chưa phản hồi. Chỉ trích tập trung vào việc DeepSeek, CXMT cùng hơn 100 công ty Trung Quốc bị gắn cờ vẫn chưa vào danh sách đen thương mại. Warren và Coons yêu cầu Lutnick, Rubio và Stephen Miller lưu giữ tài liệu về xuất khẩu chip NVIDIA. Wyden và Neal mở điều tra các giấy phép H200.",
+   "title": "Reuters: Nhà Trắng bàn chuyện có nên để Lutnick rời ghế Bộ trưởng Thương mại",
+   "url": "https://www.staradvertiser.com/2026/11/12/breaking-news/white-house-weighs-howard-lutnicks-future-as-commerce-secretary/",
+   "why": "Lần đầu có tin chính Nhà Trắng cân nhắc vị trí của người nắm quyền cấp phép xuất khẩu chip."
+  },
+  {
+   "d": "13/11",
+   "direct": true,
+   "nodes": [
+    "commerce",
+    "cloud",
+    "blackwell",
+    "singapore"
+   ],
+   "src": "Gizmodo",
+   "sum": "Gizmodo thuật lại tin của The Information rằng Bộ Thương mại Mỹ đang hoàn tất một quy định về truy cập từ xa. Nếu ban hành, nhà cung cấp đám mây ở Singapore, Malaysia, Thái Lan, Brazil, Indonesia, Na Uy và Nam Phi phải có giấy phép Mỹ mới được nhận chip Blackwell trở lên. Họ cũng phải báo cáo ai nhận chip và dùng vào việc gì. Trung tâm dữ liệu do công ty Mỹ vận hành được miễn nếu chặn khách từ các nước bị hạn chế. NVIDIA từng vận động chống quy định này. Quy định chưa được công bố chính thức.",
+   "title": "The Information: Bộ Thương mại hoàn tất quy định chặn Trung Quốc thuê chip NVIDIA từ xa",
+   "url": "https://gizmodo.com/china-is-racing-to-exploit-an-nvidia-loophole-before-the-trump-admin-slams-it-shut-2000839012",
+   "why": "Đây là đường siết mà Bộ Thương mại tự làm được, không cần chờ Quốc hội. Tin chỉ dựa vào một báo và chưa có xác nhận từ Bộ Thương mại."
   },
   {
    "d": "13/11",
@@ -144,15 +215,60 @@
    "direct": true,
    "nodes": [
     "huang",
-    "powell",
-    "nvboard",
-    "press"
+    "kress",
+    "jones",
+    "eresign"
    ],
-   "src": "IBTimes",
-   "sum": "IBTimes thuật lại tin của Reuters, dựa vào hai nguồn giấu tên, rằng Jensen Huang từng có quan hệ thân mật với một nhân viên NVIDIA khác trước khi từ chức. Reuters không nêu tên người này, không nói thời điểm và không liên lạc được với bà. Huang không phản hồi, NVIDIA từ chối bình luận. Đến nay Huang chỉ công khai thừa nhận một lần không chung thủy trong thư gửi nhân viên ngày 8/11. Mối quan hệ với Kimberly Powell do New York Times đưa cũng chưa được ai xác nhận.",
-   "title": "Reuters: Huang có thêm một mối quan hệ chưa công bố với nhân viên NVIDIA, các bên chưa bình luận",
-   "url": "https://www.ibtimes.co.uk/reuters-third-alleged-relationship-jensen-huang-1831950",
-   "why": "Cáo buộc chưa được xác minh và chỉ dựa vào nguồn giấu tên. Nếu đúng, phạm vi cuộc điều tra độc lập của hội đồng quản trị có thể rộng hơn vụ Alice Huang."
+   "src": "NVIDIA",
+   "sum": "Theo thông cáo NVIDIA nộp cho SEC ngày 12/11, Jensen Huang từ chức chủ tịch điều hành, CEO và thành viên hội đồng quản trị, có hiệu lực ngay. Giám đốc tài chính Colette Kress kiêm CEO tạm quyền cho tới khi có người chính thức. Harvey Jones trở thành chủ tịch hội đồng quản trị đầu tiên của công ty. Hội đồng đã bắt đầu tìm CEO, xét cả ứng viên trong và ngoài công ty, không nêu thời hạn. Báo cáo quý 3 vẫn công bố ngày 17/11. Thông cáo không nhắc tới cuộc điều tra nào.",
+   "title": "NVIDIA công bố Huang từ chức, Colette Kress làm CEO tạm quyền, Harvey Jones làm chủ tịch",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+   "why": "Đây là văn bản chính thức chốt việc chuyển giao quyền lực sau 33 năm. Công ty chưa có người kế nhiệm lâu dài ngay trước kỳ báo cáo quý."
+  },
+  {
+   "d": "12/11",
+   "direct": true,
+   "nodes": [
+    "jones",
+    "nvboard",
+    "haas",
+    "kress"
+   ],
+   "src": "Fortune",
+   "sum": "Harvey Jones 73 tuổi, ngồi trong hội đồng quản trị NVIDIA từ năm 1993 và từng là CEO Synopsys. Người quen cũ của ông nói với Fortune rằng ông nhiều khả năng dẫn dắt việc tìm CEO, quá trình có thể mất ít nhất vài tháng. Fortune dẫn Bloomberg rằng NVIDIA đã thuê một hãng tuyển dụng bên ngoài. René Haas của Arm được nhắc là ứng viên tiềm năng. Một nhà đầu tư mạo hiểm cho rằng hội đồng phải tự xem lại vai trò của mình trong khủng hoảng, khi Huang không có kế hoạch kế nhiệm rõ ràng. NVIDIA không phản hồi Fortune.",
+   "title": "Fortune: Harvey Jones nhiều khả năng dẫn dắt việc tìm CEO, bị hỏi về trách nhiệm của hội đồng",
+   "url": "https://fortune.com/2026/11/12/nvidia-new-board-chair-harvey-jones-likely-to-lead-ceo-search/",
+   "why": "Người dẫn dắt cuộc tìm kiếm cũng là thành viên hội đồng lâu năm nhất. Câu hỏi về giám sát của hội đồng có thể ảnh hưởng tới lựa chọn người kế nhiệm."
+  },
+  {
+   "d": "12/11",
+   "direct": true,
+   "nodes": [
+    "beijing",
+    "mfa",
+    "megaspeed",
+    "xi"
+   ],
+   "src": "Al Jazeera",
+   "sum": "Tại họp báo hôm thứ Năm, người phát ngôn Bộ Ngoại giao Trung Quốc Mao Ninh nói Washington nên ngừng dựng các câu chuyện gián điệp làm cớ áp phong tỏa công nghệ. Bà nói tiến bộ công nghệ của Trung Quốc đến từ tự đổi mới và hợp tác mở. Bà cũng nói Bắc Kinh sẵn sàng cùng Mỹ thực hiện đồng thuận giữa hai nguyên thủ. Trước đó Bộ Ngoại giao Trung Quốc gọi các cáo buộc là vô căn cứ. Megaspeed cho biết họ coi trọng việc tuân thủ kiểm soát xuất khẩu của Mỹ và cam kết làm việc minh bạch với chính phủ Mỹ.",
+   "title": "Bắc Kinh: Mỹ dựng chuyện gián điệp quanh NVIDIA để biện minh cho phong tỏa công nghệ",
+   "url": "https://www.aljazeera.com/news/2026/11/12/china-says-us-fabricating-nvidia-spy-claims-to-justify-tech-blockade",
+   "why": "Bắc Kinh gắn thẳng vụ việc với cuộc tranh luận về kiểm soát chip. Giọng điệu vẫn chừa cửa cho cuộc gặp Trump và Tập tuần tới."
+  },
+  {
+   "d": "12/11",
+   "direct": true,
+   "nodes": [
+    "cloud",
+    "grey",
+    "rasa",
+    "h200"
+   ],
+   "src": "Reuters",
+   "sum": "Ba nguồn thạo tin nói với Reuters rằng một nhà cung cấp đám mây lớn của Trung Quốc đã bàn việc giữ chỗ năng lực tính toán NVIDIA tại trung tâm dữ liệu ngoài nước. Các phòng thí nghiệm AI nhỏ hơn đang tìm nhà cung cấp ở Đông Nam Á. Nhu cầu chip NVIDIA trên thị trường xám tại Trung Quốc tăng và giới trung gian đang tích trữ. Hồ sơ mua sắm cho thấy một đại học có liên hệ với quân đội Trung Quốc đã mua chip H200 tháng trước dù nằm trong danh sách đen. Tencent, Alibaba, NVIDIA và Bộ Thương mại Mỹ chưa phản hồi. Megaspeed phủ nhận chuyển chip trái phép.",
+   "title": "Reuters: công ty AI Trung Quốc gấp rút thuê năng lực chip NVIDIA ở nước ngoài",
+   "url": "https://www.businessday.co.za/world/international-companies/2026-11-12-chinese-ai-firms-rush-to-secure-nvidia-chip-capacity-as-spy-scandal-stirs-fear-of-us-curbs/",
+   "why": "Phía Trung Quốc đang chạy trước khả năng Mỹ đóng cửa thuê chip từ xa. Điều này cho thấy họ coi rủi ro siết chính sách là thật."
   },
   {
    "d": "12/11",
@@ -174,36 +290,6 @@
    "direct": true,
    "nodes": [
     "doj",
-    "nvidia",
-    "supermicro",
-    "megaspeed"
-   ],
-   "src": "Stocktwits",
-   "sum": "Stocktwits thuật lại tin độc quyền của Semafor, dựa vào hai quan chức chính quyền giấu tên. Theo đó Bộ Tư pháp Mỹ có một cuộc điều tra chống độc quyền nhằm riêng vào NVIDIA. Hai cuộc khác liên quan Super Micro và Megaspeed, tập trung vào Alice Huang. Semafor ghi hiện chưa có dấu hiệu Bộ Tư pháp sẽ truy tố hình sự NVIDIA hay Jensen Huang. NVIDIA và Super Micro chưa phản hồi Stocktwits. Megaspeed trước đó đã phủ nhận sai phạm. Cổ phiếu Super Micro giảm hơn 10% trong phiên.",
-   "title": "Semafor: Bộ Tư pháp có ba hướng điều tra chạm tới NVIDIA, trong đó một hướng về chống độc quyền",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/supermicro-nvidia-reportedly-face-doj-175845243.html",
-   "why": "Lần đầu có tin về một hướng chống độc quyền song song với các hướng buôn lậu chip. Thông tin chỉ từ nguồn giấu tên và chưa được Bộ Tư pháp xác nhận."
-  },
-  {
-   "d": "12/11",
-   "direct": true,
-   "nodes": [
-    "esell",
-    "nvidia",
-    "amd",
-    "broadcom"
-   ],
-   "src": "Kiplinger",
-   "sum": "NVIDIA chốt phiên 12/11 giảm khoảng 4,3% sau khi có lúc mất gần 14% đầu phiên. AMD tăng 5,9% và Broadcom tăng 5,5%. CoreWeave giảm 6,9%, Micron giảm 1,6%. Ba chỉ số chính của Mỹ cùng giảm khoảng 0,4%, Nasdaq Composite đóng cửa quanh 25.366 điểm. Trước giờ mở cửa, Oppenheimer đã hạ đánh giá NVIDIA và bỏ giá mục tiêu vì chưa thấy người kế nhiệm rõ ràng.",
-   "title": "Phố Wall đóng cửa: NVIDIA giảm 4,3%, AMD và Broadcom tăng hơn 5%",
-   "url": "https://www.kiplinger.com/investing/stocks/stocks-slip-as-wall-street-weighs-nvidias-ceo-crisis-stock-market-today",
-   "why": "Thị trường thu hẹp đà giảm trong ngày, tiền chuyển sang đối thủ của NVIDIA chứ không rời hẳn nhóm AI. Phép thử kế tiếp là báo cáo quý ngày 17/11 do Kress chủ trì."
-  },
-  {
-   "d": "12/11",
-   "direct": true,
-   "nodes": [
-    "doj",
     "supermicro",
     "alice",
     "singapore"
@@ -213,66 +299,6 @@
    "title": "Công tố Manhattan xem xét đường dây đưa máy chủ Super Micro sang Trung Quốc",
    "url": "https://fortune.com/2026/11/12/jensen-huang-affair-megaspeed-supermicro-nvidia-smuggling-doj/",
    "why": "Hai nhánh điều tra vốn tách rời nay có thể gặp nhau ở cùng một nhân vật. Thông tin gốc vẫn từ nguồn giấu tên và chưa có cáo trạng mới."
-  },
-  {
-   "d": "12/11",
-   "direct": true,
-   "nodes": [
-    "bessent",
-    "lutnick",
-    "megaspeed",
-    "commerce"
-   ],
-   "src": "IBTimes",
-   "sum": "IBTimes thuật lại tin của Axios, dựa vào nguồn giấu tên, rằng Bộ trưởng Tài chính Scott Bessent đã hỏi thẳng Howard Lutnick vì sao Megaspeed chưa bị đưa vào danh sách thực thể. Axios cũng nói Lutnick đã trì hoãn các biện pháp siết ít nhất ba lần trong năm 2026 vì lo căng thẳng thương mại với Trung Quốc. Người phát ngôn Bộ Thương mại Kristen Eichamer nói thông tin này sai và hai bộ trưởng không có cuộc trao đổi như vậy. Nhà Trắng cho biết Tổng thống hoàn toàn tin tưởng Lutnick.",
-   "title": "Axios: Bessent chất vấn Lutnick về Megaspeed trong Phòng Tình huống, Bộ Thương mại phủ nhận",
-   "url": "https://www.yahoo.com/news/politics/articles/bessent-reportedly-confronted-lutnick-over-201958119.html",
-   "why": "Nếu đúng, rạn nứt về chip Trung Quốc nằm ngay trong nội các. Câu chuyện hiện chỉ dựa vào nguồn giấu tên và đã bị Bộ Thương mại bác bỏ."
-  },
-  {
-   "d": "12/11",
-   "direct": true,
-   "nodes": [
-    "trump",
-    "xi",
-    "esummit",
-    "rasa"
-   ],
-   "src": "Al Jazeera",
-   "sum": "Tổng thống Trump sẽ tới Thâm Quyến tuần sau dự hội nghị APEC và gặp Chủ tịch Tập Cận Bình. Các chuyên gia Al Jazeera hỏi cho rằng ông chưa có dấu hiệu phá vỡ thế hòa hoãn hiện nay, nhưng sức ép từ Quốc hội và phe cứng rắn sẽ tăng trong năm tới. Một nhà phân tích nêu khả năng Quốc hội thông qua luật hạn chế truy cập chip từ xa hoặc Bộ Thương mại siết Megaspeed, song khó xảy ra ngay tuần sau. Bắc Kinh bác cáo buộc gián điệp và nói vẫn sẵn sàng thực hiện đồng thuận giữa hai lãnh đạo.",
-   "title": "Trước chuyến đi Thâm Quyến: giới phân tích không cho rằng Trump sẽ cứng rắn hơn với Bắc Kinh",
-   "url": "https://www.aljazeera.com/news/2026/11/12/trump-heads-to-china-amid-nvidia-scandal-will-he-get-tougher-on-beijing",
-   "why": "Thượng đỉnh là mốc gần nhất cho thấy vụ NVIDIA có đổi được chính sách chip hay không. Doanh số H200 sang Trung Quốc vốn đã thấp vì Bắc Kinh chậm cấp phép nhập."
-  },
-  {
-   "d": "12/11",
-   "direct": true,
-   "nodes": [
-    "congress",
-    "gophawks",
-    "ndaa",
-    "huang"
-   ],
-   "src": "Reuters",
-   "sum": "Mike Johnson nói với phóng viên rằng ông ủng hộ hạn chế xuất khẩu chip sang Trung Quốc và thấy một đồng thuận đang hình thành trong Quốc hội. Ông không nêu dự luật hay mốc thời gian cụ thể, chỉ nói diễn biến gần đây có thể làm vài người đổi ý. Chủ tịch Ủy ban Đối ngoại Brian Mast cho biết nhân viên Quốc hội đã trao đổi với phía NVIDIA tối 11/11. Ông kỳ vọng Huang ra điều trần trong vòng một tuần tới.",
-   "title": "Chủ tịch Hạ viện Johnson: Quốc hội đang hình thành đồng thuận hạn chế xuất chip sang Trung Quốc",
-   "url": "https://www.yahoo.com/news/politics/articles/speaker-johnson-says-congress-developing-143530401.html",
-   "why": "Người đứng đầu Hạ viện lần đầu công khai nghiêng về phía siết chip. Ba dự luật đang nằm trong bản luật quốc phòng của Thượng viện có thêm cơ hội được giữ lại."
-  },
-  {
-   "d": "12/11",
-   "direct": true,
-   "nodes": [
-    "nvboard",
-    "kress",
-    "buck",
-    "haas"
-   ],
-   "src": "CBS News",
-   "sum": "Hội đồng quản trị NVIDIA nói sẽ xét cả ứng viên trong và ngoài công ty, chưa đưa mốc thời gian. Các nhà phân tích được CBS hỏi coi Ian Buck, người tạo ra CUDA, là lựa chọn nội bộ hợp lý nhất. Rene Haas của Arm và Johny Srouji của Apple cũng được nêu tên. Tim Cook được Tổng thống Trump công khai ủng hộ. Phần lớn ý kiến cho rằng Colette Kress chỉ giữ vai trò tạm quyền và hội đồng không nên vội chốt người.",
-   "title": "Ai thay Huang: Ian Buck dẫn đầu nhóm nội bộ, Tim Cook được nhắc nhiều nhất bên ngoài",
-   "url": "https://www.cbsnews.com/news/jensen-huang-next-nvidia-ceo-candidates/",
-   "why": "Kress sẽ phải trả lời câu hỏi kế nhiệm ngay trong buổi công bố kết quả kinh doanh ngày 17/11. Thị trường dự đoán chỉ là đồn đoán, chưa có ứng viên nào lên tiếng."
   }
  ],
  "stocks": [
