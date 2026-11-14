@@ -1,7 +1,97 @@
 {
- "updated": "13/11 06:40",
- "stockLabel": "12/11",
+ "updated": "14/11 09:45",
+ "stockLabel": "13/11",
  "news": [
+  {
+   "d": "13/11",
+   "src": "Fortune",
+   "direct": true,
+   "url": "https://fortune.com/2026/11/13/scott-bessent-treasury-blacklist-megaspeed-howard-lutnick-nvidia-jensen-huang/",
+   "title": "Bessent nói công khai: Bộ Tài chính muốn đưa Megaspeed vào danh sách đen từ nhiều tháng, \"Bộ Thương mại cầm bút\"",
+   "sum": "Trả lời CNBC hôm thứ Sáu 13/11, Bộ trưởng Tài chính Scott Bessent nói Bộ Tài chính, Bộ Chiến tranh, Đại diện Thương mại và Bộ Ngoại giao đều ủng hộ đưa Megaspeed vào danh sách thực thể \"từ nhiều tháng\", nhưng quyền quyết định thuộc Bộ Thương mại. Ông từ chối kể lại cuộc họp ở Phòng Tình huống. Fortune dẫn The Information rằng Megaspeed và công ty con ở Malaysia đã chuyển ít nhất 7,5 tỷ USD chip NVIDIA sang Trung Quốc trong hai năm, con số cao hơn mức 4,8 tỷ USD từng được nêu. Bộ Thương mại và NVIDIA chưa phản hồi Fortune.",
+   "why": "Lần đầu một bộ trưởng nêu tên bộ khác trước ống kính. Mâu thuẫn Bessent với Lutnick chuyển từ nguồn giấu tên sang phát ngôn chính thức. Con số 7,5 tỷ USD mới có một nguồn.",
+   "nodes": [
+    "bessent",
+    "lutnick",
+    "megaspeed",
+    "commerce"
+   ]
+  },
+  {
+   "d": "13/11",
+   "src": "New York Post",
+   "direct": false,
+   "url": "https://www.yahoo.com/news/politics/articles/commerce-dept-howard-lutnick-testify-154718177.html",
+   "title": "Lutnick đồng ý ra điều trần trước Ủy ban Ngân hàng Thượng viện, Huang cũng được mời",
+   "sum": "Chủ tịch Ủy ban Ngân hàng Thượng viện Tim Scott gửi thư ngày 12/11 mời Howard Lutnick và Jensen Huang trả lời về an ninh quốc gia và việc bảo vệ công nghệ nhạy cảm. Người phát ngôn Bộ Thương mại nói ông Lutnick chủ động đồng ý ra điều trần tự nguyện. Fox Business và Fortune nêu ngày 10/12 cho phiên công khai. New York Post viết hai phiên riêng vào đầu tháng 12. Thượng nghị sĩ Jack Reed đòi minh bạch các thỏa thuận tài trợ của NVIDIA.",
+   "why": "Phiên công khai đầu tiên về vụ việc đã có lịch. Các nguồn còn lệch nhau về việc hai người ra chung hay riêng.",
+   "nodes": [
+    "lutnick",
+    "huang",
+    "congress",
+    "commerce"
+   ]
+  },
+  {
+   "d": "13/11",
+   "src": "Yahoo Finance",
+   "direct": true,
+   "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-13-222002466.html",
+   "title": "Phiên 13/11: NVIDIA giảm tiếp 2%, HSBC hạ khuyến nghị, AMD và Broadcom quay đầu giảm mạnh",
+   "sum": "NVIDIA đóng cửa ở 162,85 USD, giảm 2,01%, khối lượng gần 361 triệu cổ phiếu. Cả tuần cổ phiếu mất khoảng 12% và vốn hóa đóng cửa dưới 4 nghìn tỷ USD. Nhà phân tích Frank Lee của HSBC hạ khuyến nghị xuống nắm giữ, giá mục tiêu còn 170 USD, cho rằng cổ phiếu khó hồi phục đến khi có CEO chính thức. AMD giảm 8,75%, Broadcom giảm 4,76%. Nasdaq giảm 0,9%, S&P 500 giảm 0,4%, Dow tăng 0,1%. Lợi suất trái phiếu 10 năm quanh 5,15%.",
+   "why": "Hai ngày đầu tiền chảy sang đối thủ. Đến ngày thứ ba cả nhóm chip cùng giảm, tức thị trường coi đây là rủi ro của cả ngành chứ không riêng NVIDIA.",
+   "nodes": [
+    "nvidia",
+    "amd",
+    "broadcom",
+    "esell"
+   ]
+  },
+  {
+   "d": "13/11",
+   "src": "Fox News",
+   "direct": false,
+   "url": "https://www.foxnews.com/live-news/ai-news-china-nvidia-jensen-huang-resigns-super-intelligence-safety-11-13-26",
+   "title": "WIRED: một số nhân viên NVIDIA kêu gọi hội đồng quản trị cho Huang \"cơ hội thứ hai\"",
+   "sum": "Theo WIRED, được Fox News thuật lại, lời kêu gọi bắt đầu từ một bài đăng của một kỹ sư trên hộp thư góp ý nội bộ, viết trước khi Huang rời ghế, đề nghị hội đồng cân nhắc tâm tư nhân viên. Chưa có con số về lượng người ủng hộ. Cùng ngày, Tổng thống Trump nói ông đã nói chuyện với Huang, mô tả ông \"đang trải qua địa ngục\" và đang lo cho gia đình. Ông Trump nói mọi chuyện còn tùy việc người phụ nữ liên quan có phải gián điệp hay không.",
+   "why": "Cho thấy nội bộ NVIDIA chưa khép lại chuyện Huang. Quy mô lời kêu gọi chưa rõ nên chưa thể coi là sức ép thật lên hội đồng.",
+   "nodes": [
+    "huang",
+    "nvboard",
+    "nvidia",
+    "trump"
+   ]
+  },
+  {
+   "d": "13/11",
+   "src": "Yahoo Finance",
+   "direct": false,
+   "url": "https://finance.yahoo.com/technology/articles/could-former-nvidia-executive-replace-221603173.html",
+   "title": "Financial Times: hội đồng NVIDIA tiếp cận Rene Haas của Arm, hội đồng nói mọi suy đoán còn quá sớm",
+   "sum": "Financial Times đưa tin hội đồng quản trị đã tiếp cận ông Rene Haas, tổng giám đốc Arm, như một trong vài ứng viên. Ông Haas ngồi trong hội đồng quản trị SoftBank và điều hành SoftBank Group International từ tháng 4. Hội đồng NVIDIA nói với Reuters rằng họ còn đang chọn công ty tuyển dụng và chưa làm việc chính thức với ứng viên nào. Ian Buck và Lisa Su mới chỉ là tên do giới phân tích nêu. NVIDIA báo cáo lợi nhuận ngày 17/11.",
+   "why": "Tên đầu tiên có nguồn về người kế nhiệm. Nếu thành, hai bảng cân đối lớn nhất của cuộc đua hạ tầng AI là NVIDIA và SoftBank sẽ gần nhau hơn.",
+   "nodes": [
+    "haas",
+    "arm",
+    "nvboard",
+    "kress"
+   ]
+  },
+  {
+   "d": "13/11",
+   "src": "CBS News",
+   "direct": true,
+   "url": "https://www.cbsnews.com/news/jensen-huang-nvidia-alice-huang-singapore-investigation-china-chips/",
+   "title": "CBS: Singapore điều tra Megaspeed từ tháng 2/2025, nói Mỹ không hỗ trợ thực chất",
+   "sum": "Theo CBS, cảnh sát Singapore giữ hộ chiếu bà Alice Huang từ tháng 6/2025, trả lại vào tháng 2/2026 mà không truy tố và cấm bà nhập cảnh vì khai không chính xác về vai trò ở Megaspeed. Bộ Nội vụ Singapore xác nhận đang điều tra khả năng khai báo sai khi mua máy chủ và nói đã nhiều lần đề nghị Bộ Tư pháp Mỹ và FBI hỗ trợ. Hai nguồn giấu tên nói Washington không hợp tác thực chất. Thủ tướng Malaysia nói không có dấu hiệu chip bị tái xuất. Megaspeed phủ nhận sai phạm.",
+   "why": "Nơi điều tra lâu nhất chưa truy tố ai trong vụ này. Chi tiết Mỹ không hỗ trợ Singapore mới đến từ nguồn giấu tên.",
+   "nodes": [
+    "alice",
+    "megaspeed",
+    "singapore",
+    "doj"
+   ]
+  },
   {
    "d": "13/11",
    "src": "Reuters",
@@ -183,66 +273,6 @@
    "title": "Ai thay Huang: Ian Buck dẫn đầu nhóm nội bộ, Tim Cook được nhắc nhiều nhất bên ngoài",
    "url": "https://www.cbsnews.com/news/jensen-huang-next-nvidia-ceo-candidates/",
    "why": "Kress sẽ phải trả lời câu hỏi kế nhiệm ngay trong buổi công bố kết quả kinh doanh ngày 17/11. Thị trường dự đoán chỉ là đồn đoán, chưa có ứng viên nào lên tiếng."
-  },
-  {
-   "d": "12/11",
-   "direct": true,
-   "nodes": [
-    "lutnick",
-    "gophawks",
-    "megaspeed",
-    "rubio"
-   ],
-   "src": "Daily Beast",
-   "sum": "Thượng nghị sĩ John Kennedy nói với Politico rằng Bộ trưởng Thương mại nên tự ra giải thích công khai thay vì chờ Quốc hội. Hạ nghị sĩ Bill Huizenga muốn ông điều trần về việc không hành động dù cuộc điều tra kéo dài nhiều tháng. Bài báo dẫn lại Axios rằng Lầu Năm Góc, Bộ Ngoại giao và Bộ Tài chính đều thúc đưa Megaspeed vào danh sách thực thể, có cả một bản ghi nhớ của Ngoại trưởng Rubio. Văn phòng Lutnick chưa phản hồi. Chủ tịch Hạ viện nói chính quyền đang xem xét.",
-   "title": "Nghị sĩ Cộng hòa đòi Lutnick giải trình vì chưa đưa Megaspeed vào danh sách đen",
-   "url": "https://www.yahoo.com/news/politics/articles/lutnick-under-fire-over-nvidia-111646229.html",
-   "why": "Sức ép với Lutnick giờ đến từ chính đảng của ông. Phần lớn chi tiết vẫn dựa vào nguồn giấu tên và báo khác thuật lại."
-  },
-  {
-   "d": "12/11",
-   "direct": true,
-   "nodes": [
-    "mfa",
-    "beijing",
-    "esummit",
-    "schumer"
-   ],
-   "src": "Forbes",
-   "sum": "Tại họp báo thường kỳ ngày 12/11, người phát ngôn Bộ Ngoại giao Mao Ninh nói Mỹ nên ngừng tạo ra câu chuyện gián điệp Trung Quốc để lấy cớ hạn chế công nghệ. Trước đó ngày 9/11 phía Trung Quốc gọi các cáo buộc về Alice Huang là hoàn toàn vô căn cứ. Ở Washington, lãnh đạo Dân chủ Thượng viện Schumer kêu gọi thông qua ba dự luật kiểm soát chip. Hai thượng nghị sĩ Jim Banks và Elizabeth Warren cùng đề nghị Bộ Thương mại bịt các kẽ hở hiện có.",
-   "title": "Bắc Kinh: Mỹ nên ngừng dựng chuyện gián điệp Trung Quốc để biện minh cho siết công nghệ",
-   "url": "https://www.forbes.com/sites/siladityaray/2026/11/12/china-warns-against-renewed-us-chip-curbs-amid-nvidia-jensen-huang-scandal/",
-   "why": "Bắc Kinh giữ giọng cứng ngay trước cuộc gặp Trump và Tập Cận Bình ở Thâm Quyến tuần sau. Hai bên đang nói về cùng một vụ việc bằng hai câu chuyện trái ngược."
-  },
-  {
-   "d": "12/11",
-   "direct": true,
-   "nodes": [
-    "huang",
-    "congress",
-    "gophawks",
-    "alice"
-   ],
-   "src": "TechCrunch",
-   "sum": "Chủ tịch Ủy ban Đối ngoại Hạ viện Brian Mast cho biết Jensen Huang đã nhận lời ra trước các ủy ban của Hạ viện trước Lễ Tạ ơn. Phiên làm việc diễn ra kín, dự kiến có ghi hình và biên bản. Yahoo Finance đưa ngày dự kiến là 18/11, một ngày sau báo cáo tài chính của NVIDIA. Trước đó một số nghị sĩ cấp cao đã dọa dùng trát triệu tập.",
-   "title": "Huang đồng ý điều trần kín trước Quốc hội Mỹ",
-   "url": "https://techcrunch.com/2026/11/12/jensen-huang-agrees-to-testify-before-congress/",
-   "why": "Lần đầu Huang phải trả lời có ghi biên bản về quan hệ với Alice Huang và việc vận động bán chip sang Trung Quốc. Yêu cầu đến từ ba chủ tịch ủy ban Cộng hòa."
-  },
-  {
-   "d": "12/11",
-   "direct": true,
-   "nodes": [
-    "megaspeed",
-    "alice",
-    "singapore",
-    "commerce"
-   ],
-   "src": "Reuters",
-   "sum": "Trong thông cáo trên trang web, CEO kiêm Chủ tịch James Tan Yong Pong nói công ty rất coi trọng nghĩa vụ tuân thủ luật kiểm soát xuất khẩu của Mỹ. Megaspeed cho biết đã hợp tác với các đợt thanh tra của Cục Công nghiệp và An ninh thuộc Bộ Thương mại. Công ty sẵn sàng làm việc với cơ quan Mỹ khác. Công ty thuê một hãng luật Mỹ để kiểm đếm toàn bộ GPU. Alice Huang được mô tả là cựu lãnh đạo công ty, Reuters không liên lạc được với bà.",
-   "title": "Megaspeed lên tiếng: đã hợp tác thanh tra, thuê luật sư Mỹ kiểm đếm GPU",
-   "url": "https://www.thestar.com.my/tech/tech-news/2026/11/12/nvidia-customer-megaspeed-says-it-cooperated-with-us-inspections-takes-export-control-laws-seriously",
-   "why": "Đây là phát ngôn chính thức đầu tiên của công ty ở tâm vụ việc. Thông cáo nhấn vào tuân thủ, không trực tiếp bác từng cáo buộc."
   }
  ],
  "stocks": [
@@ -250,111 +280,111 @@
    "name": "NVIDIA",
    "node": "nvidia",
    "note": "đóng cửa",
-   "pct": -4.34,
+   "pct": -2.01,
    "sym": "NVDA"
   },
   {
    "name": "AMD",
    "node": "amd",
    "note": "đóng cửa",
-   "pct": 5.9,
+   "pct": -8.75,
    "sym": "AMD"
   },
   {
    "name": "Broadcom",
    "node": "broadcom",
    "note": "đóng cửa",
-   "pct": 5.5,
+   "pct": -4.76,
    "sym": "AVGO"
   },
   {
    "name": "CoreWeave",
    "node": "neocloud",
-   "note": "đóng cửa",
-   "pct": -6.9,
+   "note": "theo Reuters",
+   "pct": -8.8,
    "sym": "CRWV"
   },
   {
    "name": "Nebius",
    "node": "neocloud",
-   "note": "trong phiên, sau kết quả quý 3",
-   "pct": -16.48,
+   "note": "theo Reuters",
+   "pct": -9.0,
    "sym": "NBIS"
   },
   {
    "name": "Super Micro",
    "node": "supermicro",
-   "note": "sau tin Semafor",
+   "note": "sau tin Semafor, phiên 12/11",
    "pct": -10.5,
    "sym": "SMCI"
   },
   {
    "name": "Micron",
    "node": "esell",
-   "note": "đóng cửa",
-   "pct": -1.6,
+   "note": "theo Reuters",
+   "pct": -5.0,
    "sym": "MU"
   },
   {
    "name": "Sandisk",
    "node": "esell",
-   "note": "trong phiên",
+   "note": "trong phiên, phiên 12/11",
    "pct": -6,
    "sym": "SNDK"
   },
   {
    "name": "Western Digital",
    "node": "esell",
-   "note": "trong phiên",
+   "note": "trong phiên, phiên 12/11",
    "pct": -3.7,
    "sym": "WDC"
   },
   {
    "name": "TSMC",
    "node": "tsmc",
-   "note": "",
+   "note": "phiên 12/11",
    "pct": -2,
    "sym": "TSM"
   },
   {
    "name": "SK Hynix",
    "node": "skhynix",
-   "note": "",
-   "pct": -1.6,
+   "note": "trong phiên",
+   "pct": -6.0,
    "sym": "000660"
   },
   {
    "name": "Samsung",
    "node": "samsung",
-   "note": "",
+   "note": "phiên 12/11",
    "pct": 0.8,
    "sym": "005930"
   },
   {
    "name": "Alibaba",
    "node": "alibaba",
-   "note": "Hồng Kông",
+   "note": "Hồng Kông, phiên 12/11",
    "pct": -6.76,
    "sym": "9988"
   },
   {
    "name": "Tencent",
    "node": "tencent",
-   "note": "Hồng Kông",
+   "note": "Hồng Kông, phiên 12/11",
    "pct": -2.64,
    "sym": "0700"
   },
   {
    "name": "Z.AI",
    "node": "demand",
-   "note": "",
+   "note": "phiên 12/11",
    "pct": -9.05,
    "sym": "AI"
   },
   {
    "name": "MiniMax",
    "node": "demand",
-   "note": "",
+   "note": "phiên 12/11",
    "pct": -7.8,
    "sym": "AI"
   },
@@ -362,7 +392,7 @@
    "name": "Nasdaq Composite",
    "node": "esell",
    "note": "đóng cửa",
-   "pct": -0.39,
+   "pct": -0.9,
    "sym": "IXIC"
   }
  ]
