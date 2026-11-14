@@ -6,11 +6,11 @@ img{max-width:100%}
 /* Layout: đồ thị 3D phủ kín sân khấu tối. Thanh tin trên đỉnh, dải cổ phiếu sát đáy, thanh nhánh và thanh hành trình nổi trên đồ thị, cột thông tin là một tấm kính bên phải. Ba màu phe: xanh NVIDIA, lam Mỹ, đỏ Trung Quốc. Ánh sáng mạnh chỉ dành cho thứ đang được chọn. */
 :root{
   color-scheme:dark;
-  --bg:#05070A; --raise:#11161B; --line:#1A2128; --line2:#28323B;
-  --ink:#F3F5F6; --ink2:#9BA5B0; --ink3:#5C6772;
+  --bg:#030508; --raise:#131A20; --line:#222B34; --line2:#35424E;
+  --ink:#FFFFFF; --ink2:#B6C0CA; --ink3:#7A8591;
   --nv:#76B900; --nv2:#88CF0C; --on-nv:#071006; --us:#4C86FF; --cn:#F0504F;
   --up:#86D80F; --dn:#FF5F5C; --acc:#76B900;
-  --glass:rgba(10,13,17,.62); --solid:rgba(10,13,17,.94);
+  --glass:rgba(8,11,15,.72); --solid:rgba(8,11,15,.95);
   --serif:"Noto Serif",Georgia,serif; --sans:Inter,system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
   --ease:cubic-bezier(.2,.8,.2,1);
   --tk:34px; --sk:30px; --pw:380px;
@@ -28,7 +28,7 @@ body.lite .blur{background:var(--solid);-webkit-backdrop-filter:none;backdrop-fi
 
 /* sân khấu */
 .view{position:absolute;inset:0;overflow:hidden}
-.view::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(120% 90% at 50% 46%,transparent 52%,rgba(5,7,10,.78) 100%)}
+.view::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(120% 90% at 50% 46%,transparent 56%,rgba(1,2,4,.72) 100%)}
 #gl{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:none}
 .nogl{position:absolute;inset:0;display:grid;place-items:center;padding:24px;color:var(--ink2);text-align:center}
 .cap{position:absolute;z-index:2;left:calc((100% - var(--pw) - 24px)/2);bottom:calc(var(--sk) + 158px);transform:translateX(-50%);width:min(640px,calc(100% - var(--pw) - 90px));text-align:center;pointer-events:none}

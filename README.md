@@ -23,6 +23,8 @@ Triển khai lên Vercel: nhập repo, giữ nguyên mặc định (không frame
 | `content.js` | Lớp biên tập: phe, vai, luận điểm từng nhánh, lời dẫn trình chiếu `SCRIPT`, mốc thời gian, tin và cổ phiếu dự phòng |
 | `feed.json` | Tin nóng và cổ phiếu mà trang đọc khi chạy. Sửa tệp này để cập nhật hai dải chạy |
 
+Dựng hình: cảnh vẽ vào bộ đệm 16 bit rồi qua hậu kỳ HDR (quầng sáng nhiều tầng, đường cong tương phản, nén vùng sáng) viết ngay trong `app.js`, không thêm thư viện. Mức chất lượng Nhẹ tắt hậu kỳ. Sàn lưới và cọc dọi dưới mỗi nút giúp đọc chiều sâu.
+
 Thư viện ngoài: three.js r128 và OrbitControls, đặt sẵn trong `vendor/` (giấy phép MIT, xem `vendor/THREE-LICENSE`). Dải cổ phiếu lấy thêm giá trực tiếp từ `https://nvidia-monitor.vercel.app/api/fork-quotes`, không có thì giữ số trong `feed.json`.
 
 ## Sửa dữ liệu

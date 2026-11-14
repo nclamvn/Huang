@@ -58,7 +58,7 @@ function card(n,img){
   const col=CAMP[n.camp].c,c=document.createElement('canvas'),x=c.getContext('2d'),SANS='Inter, system-ui, sans-serif';let g;
   const [W,H,R]=n.type==='person'?PERSON:TILE;c.width=W*SC;c.height=H*SC;x.scale(SC,SC);
   const frame=()=>{rr(x,6,6,W-12,H-12,R)};
-  frame();g=x.createLinearGradient(0,0,0,H);g.addColorStop(0,'#141A20');g.addColorStop(1,'#0A0D11');x.fillStyle=g;x.fill();
+  frame();g=x.createLinearGradient(0,0,0,H);g.addColorStop(0,'#1B242D');g.addColorStop(.5,'#0E1319');g.addColorStop(1,'#06080B');x.fillStyle=g;x.fill();
   if(n.type==='person'){
     x.save();frame();x.clip();
     if(img){const s=Math.max(W/img.width,438/img.height),iw=img.width*s,ih=img.height*s;x.save();x.beginPath();x.rect(0,0,W,438);x.clip();x.drawImage(img,(W-iw)/2,(438-ih)/2,iw,ih);x.restore()}
@@ -68,19 +68,21 @@ function card(n,img){
     if(!img){x.textBaseline='alphabetic';x.textAlign='left';x.font=`600 22px ${SANS}`;x.fillStyle=rgba(col,.95);x.fillText(CAMP[n.camp].tag,40,62);
       x.textAlign='right';x.fillStyle='rgba(255,255,255,.42)';x.fillText(pad2(n.deg),W-40,62);
       x.textAlign='center';x.textBaseline='middle';x.font='600 204px "Noto Serif", Georgia, serif';x.shadowColor=rgba(col,.9);x.shadowBlur=46;x.fillStyle='#FFFFFF';x.fillText(monogram(n),W/2,248);x.shadowBlur=0}
-    x.textAlign='center';x.textBaseline='alphabetic';fit(x,n.label,W-76,52,600,SANS,30);x.fillStyle='#F3F5F6';x.fillText(n.label,W/2,532);
-    fit(x,ROLE[n.id]||'',W-76,34,400,SANS,24);x.fillStyle='#9BA5B0';x.fillText(ROLE[n.id]||'',W/2,592);
+    x.textAlign='center';x.textBaseline='alphabetic';fit(x,n.label,W-76,52,600,SANS,30);x.fillStyle='#FFFFFF';x.fillText(n.label,W/2,532);
+    fit(x,ROLE[n.id]||'',W-76,34,400,SANS,24);x.fillStyle='#BAC4CE';x.fillText(ROLE[n.id]||'',W/2,592);
   }else{
     const gx=104,gy=H/2;
     x.save();frame();x.clip();g=x.createRadialGradient(gx,gy,4,gx,gy,230);g.addColorStop(0,rgba(col,.42));g.addColorStop(1,rgba(col,0));x.fillStyle=g;x.fillRect(0,0,420,H);x.restore();
     if(img){x.save();rr(x,40,54,128,128,26);x.clip();x.fillStyle='#0D1114';x.fillRect(40,54,128,128);const s=Math.min(128/img.width,128/img.height),iw=img.width*s,ih=img.height*s;x.drawImage(img,gx-iw/2,gy-ih/2,iw,ih);x.restore()}
     else{x.fillStyle=col;x.strokeStyle=col;x.lineWidth=9;x.shadowColor=rgba(col,.9);x.shadowBlur=26;glyphPath(x,n.type,gx,gy,36);x.shadowBlur=0}
     x.textAlign='left';x.textBaseline='alphabetic';const TX=178,MAX=W-TX-44;x.font=`600 56px ${SANS}`;
-    if(x.measureText(n.label).width<=MAX*1.32){x.font=`600 21px ${SANS}`;x.fillStyle=rgba(col,.9);x.fillText(KIND[n.type],TX,84);fit(x,n.label,MAX,56,600,SANS,42);x.fillStyle='#F3F5F6';x.fillText(n.label,TX,154)}
-    else{x.font=`600 42px ${SANS}`;const l=wrap2(x,n.label,MAX);x.fillStyle='#F3F5F6';x.fillText(l[0],TX,104);x.fillText(l[1],TX,158,MAX)}
+    if(x.measureText(n.label).width<=MAX*1.32){x.font=`600 21px ${SANS}`;x.fillStyle=rgba(col,.9);x.fillText(KIND[n.type],TX,84);fit(x,n.label,MAX,56,600,SANS,42);x.fillStyle='#FFFFFF';x.fillText(n.label,TX,154)}
+    else{x.font=`600 42px ${SANS}`;const l=wrap2(x,n.label,MAX);x.fillStyle='#FFFFFF';x.fillText(l[0],TX,104);x.fillText(l[1],TX,158,MAX)}
   }
-  frame();x.lineWidth=4;x.strokeStyle=rgba(col,.78);if(n.type==='idea')x.setLineDash([18,14]);x.stroke();x.setLineDash([]);
-  rr(x,13,13,W-26,H-26,R-7);x.lineWidth=2;x.strokeStyle='rgba(255,255,255,.07)';x.stroke();
+  x.save();frame();x.clip();g=x.createLinearGradient(0,0,0,H*.5);g.addColorStop(0,'rgba(255,255,255,.13)');g.addColorStop(1,'rgba(255,255,255,0)');x.fillStyle=g;x.fillRect(0,0,W,H*.5);
+  g=x.createLinearGradient(0,H*.72,0,H);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(1,'rgba(0,0,0,.42)');x.fillStyle=g;x.fillRect(0,H*.72,W,H*.28);x.restore();
+  frame();x.lineWidth=5;x.strokeStyle=rgba(col,.96);if(n.type==='idea')x.setLineDash([18,14]);x.stroke();x.setLineDash([]);
+  rr(x,13,13,W-26,H-26,R-7);x.lineWidth=2;x.strokeStyle='rgba(255,255,255,.14)';x.stroke();
   const t=new THREE.CanvasTexture(c);t.minFilter=THREE.LinearMipmapLinearFilter;t.anisotropy=8;return t;
 }
 function softTex(w,h,sx,stops){const c=document.createElement('canvas');c.width=w;c.height=h;const x=c.getContext('2d');x.translate(w/2,h/2);x.scale(sx,1);const r=h/2,g=x.createRadialGradient(0,0,0,0,0,r);
@@ -101,13 +103,13 @@ function initScene(){
   let q=prefs.q>=0?prefs.q:q0,qAuto=!(prefs.q>=0),fps=60,renderer;
   try{renderer=new THREE.WebGLRenderer({canvas,antialias:q>1,powerPreference:'high-performance'})}
   catch(err){canvas.remove();const d=document.createElement('div');d.className='nogl';d.textContent='Trình duyệt này không bật được WebGL nên không vẽ được đồ thị 3D. Nội dung vẫn đọc được ở cột thông tin.';view.prepend(d);return null}
-  renderer.setClearColor(0x05070A);canvas.addEventListener('webglcontextlost',e=>e.preventDefault());
+  renderer.setClearColor(0x020306);canvas.addEventListener('webglcontextlost',e=>e.preventDefault());
   const uPx={value:1},uT={value:0};
   function applyQuality(){const area=Math.max(1,view.clientWidth*view.clientHeight),px=Math.max(.6,Math.min(devicePixelRatio,[.8,1.25,2][q],Math.sqrt([1.2e6,2.6e6,6e6][q]/area)));
     SC=Math.min([.5,.75,1][q],innerWidth<700?.75:1);renderer.setPixelRatio(px);uPx.value=px;document.body.classList.toggle('lite',q<2)}
   applyQuality();
 
-  const scene=new THREE.Scene();scene.fog=new THREE.Fog(0x05070A,440,1100);
+  const scene=new THREE.Scene();scene.fog=new THREE.Fog(0x020306,440,1100);
   const cam=new THREE.PerspectiveCamera(44,1,1,4000);cam.position.set(0,90,still?480:1050);
   const ctl=new THREE.OrbitControls(cam,canvas);ctl.enableDamping=true;ctl.dampingFactor=.07;ctl.rotateSpeed=.7;ctl.minDistance=70;ctl.maxDistance=1100;
   ctl.autoRotate=!still;ctl.autoRotateSpeed=.28;canvas.addEventListener('pointerdown',()=>{ctl.autoRotate=false},{once:true});
@@ -122,7 +124,7 @@ function initScene(){
    const g=new THREE.BufferGeometry();g.setAttribute('position',F(p,3));g.setAttribute('aS',F(a,2));
    scene.add(new THREE.Points(g,new THREE.ShaderMaterial({uniforms:{uT,uPx},transparent:true,depthWrite:false,
     vertexShader:'attribute vec2 aS;uniform float uT,uPx;varying float vA;void main(){vA=.35+.3*sin(uT*.8+aS.x*40.);gl_PointSize=aS.y*uPx*1.5;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}',
-    fragmentShader:'varying float vA;void main(){float d=length(gl_PointCoord-.5);gl_FragColor=vec4(.62,.7,.8,smoothstep(.5,.1,d)*vA);}'})))}
+    fragmentShader:'varying float vA;void main(){float d=length(gl_PointCoord-.5);gl_FragColor=vec4(vec3(.62,.7,.8)*(1.+1.4*vA*vA),smoothstep(.5,.1,d)*vA);}'})))}
   const gal=new THREE.Group();gal.rotation.set(.95,0,.5);scene.add(gal);const galGlow=new THREE.Group();gal.add(galGlow);
   const galPts=(()=>{const p=[],c=[],a=[];let s=31;const r=()=>(s=(s*16807)%2147483647)/2147483647,gs=()=>(r()+r()+r()-1.5)*.9;
     for(let i=0;i<2800;i++){const core=i%4===0,an=core?1.1+gs()*.55:r()*6.283,R=1500+r()*950,h=gs()*R*(core?.15:.085),w=r();p.push(R*Math.cos(an),h,R*Math.sin(an));c.push(.62+.38*w,.72+.14*w,1-.3*w);a.push(r(),(core?.8:.5)+r()*1.2)}
@@ -148,16 +150,16 @@ function initScene(){
   function lines(list){const g=new THREE.Group();Object.keys(TIERS).forEach(t=>{const pos=[],col=[];list.filter(e=>e.tier===t).forEach(e=>{const pts=e.curve.getPoints(22),a=C(e.s.camp),b=C(e.t.camp);
       for(let i=0;i<22;i++){const p=pts[i],q=pts[i+1],u=i/22,v=(i+1)/22;pos.push(p.x,p.y,p.z,q.x,q.y,q.z);col.push(a.r+(b.r-a.r)*u,a.g+(b.g-a.g)*u,a.b+(b.b-a.b)*u,a.r+(b.r-a.r)*v,a.g+(b.g-a.g)*v,a.b+(b.b-a.b)*v)}});
     const geo=new THREE.BufferGeometry();geo.setAttribute('position',F(pos,3));geo.setAttribute('color',F(col,3));
-    const d=TIERS[t].dash,o={vertexColors:true,transparent:true,opacity:0,depthWrite:false};
+    const d=TIERS[t].dash,o={vertexColors:true,transparent:true,opacity:0,depthWrite:false,blending:THREE.AdditiveBlending};
     const l=new THREE.LineSegments(geo,d?new THREE.LineDashedMaterial(Object.assign(o,{dashSize:d[0]*1.3,gapSize:d[1]*1.3})):new THREE.LineBasicMaterial(o));
     if(d)l.computeLineDistances();l.userData.tier=t;l.renderOrder=1;g.add(l)});return g}
   let base=lines(edges),baseTime=11;scene.add(base);
   const uF={value:0};
   const tube=(r,a)=>{const m=new THREE.Mesh(new THREE.BufferGeometry(),new THREE.ShaderMaterial(Object.assign({uniforms:{uT,uF,uR:{value:r},uA:{value:a}},side:THREE.DoubleSide,
     vertexShader:'attribute vec3 cA,cB;attribute vec2 aD;attribute float aL,aO;uniform float uR;varying vec3 vA,vB;varying vec2 vD;varying float vU,vL,vO;void main(){vA=cA;vB=cB;vD=aD;vU=uv.x;vL=aL;vO=aO;gl_Position=projectionMatrix*modelViewMatrix*vec4(position+normal*uR,1.);}',
-    fragmentShader:'uniform float uT,uA,uF;varying vec3 vA,vB;varying vec2 vD;varying float vU,vL,vO;void main(){float d=vD.x<=0.?1.:step(fract(vU*vL/vD.x),vD.y);float s=fract(uT*.22+vO-vU);float sh=pow(1.-s,7.);float ends=smoothstep(0.,.05,vU)*smoothstep(1.,.95,vU);vec3 c=mix(vA,vB,smoothstep(.15,.85,vU));gl_FragColor=vec4(c*(.75+1.6*sh),uA*uF*d*ends*(.5+.5*sh));}'},additive)));
+    fragmentShader:'uniform float uT,uA,uF;varying vec3 vA,vB;varying vec2 vD;varying float vU,vL,vO;void main(){float d=vD.x<=0.?1.:step(fract(vU*vL/vD.x),vD.y);float s=fract(uT*.22+vO-vU);float sh=pow(1.-s,7.);float ends=smoothstep(0.,.05,vU)*smoothstep(1.,.95,vU);vec3 c=mix(vA,vB,smoothstep(.15,.85,vU));gl_FragColor=vec4(c*(1.15+3.2*sh),uA*uF*d*ends*(.55+.45*sh));}'},additive)));
     m.frustumCulled=false;m.renderOrder=2;scene.add(m);return m};
-  const core=tube(.34,1),halo=tube(1.7,.13);
+  const core=tube(.36,1),halo=tube(1.9,.16);
   function tubes(list){const P=[],Nn=[],U=[],CA=[],CB=[],D=[],L=[],O=[],I=[];let b=0;
     list.forEach(e=>{const g=new THREE.TubeGeometry(e.curve,q>1?30:18,1,q>1?6:4,false),p=g.attributes.position.array,n=g.attributes.normal.array,u=g.attributes.uv.array,k=p.length/3,a=C(e.s.camp),c=C(e.t.camp),d=DASH[e.tier];
       for(let i=0;i<k;i++){P.push(p[i*3]-n[i*3],p[i*3+1]-n[i*3+1],p[i*3+2]-n[i*3+2]);Nn.push(n[i*3],n[i*3+1],n[i*3+2]);U.push(u[i*2],u[i*2+1]);CA.push(a.r,a.g,a.b);CB.push(c.r,c.g,c.b);D.push(d[0],d[1]);L.push(e.len);O.push(e.off)}
@@ -168,7 +170,7 @@ function initScene(){
     pg.setAttribute('position',F(p0,3));pg.setAttribute('p1',F(p1,3));pg.setAttribute('p2',F(p2,3));pg.setAttribute('aO',F(o,1));pg.setAttribute('color',F(col,3));pg.setAttribute('aA',F(new Float32Array(edges.length),1))}
   const parts=new THREE.Points(pg,new THREE.ShaderMaterial(Object.assign({uniforms:{uT,uPx,uG:{value:0}},
     vertexShader:'attribute vec3 p1,p2,color;attribute float aO,aA;uniform float uT,uPx;varying vec3 vC;varying float vA;void main(){float u=fract(uT*.22+aO);vec3 p=mix(mix(position,p1,u),mix(p1,p2,u),u);vec4 mv=modelViewMatrix*vec4(p,1.);vC=color;vA=aA*sin(u*3.1416)*clamp(1.6+mv.z/700.,0.,1.);gl_PointSize=uPx*(4.+aA*5.)*(320./-mv.z);gl_Position=projectionMatrix*mv;}',
-    fragmentShader:'uniform float uG;varying vec3 vC;varying float vA;void main(){float d=length(gl_PointCoord-.5)*2.;float a=pow(max(0.,1.-d),2.2);gl_FragColor=vec4(mix(vC,vec3(1.),a*.7),a*vA*uG);}'},additive)));
+    fragmentShader:'uniform float uG;varying vec3 vC;varying float vA;void main(){float d=length(gl_PointCoord-.5)*2.;float a=pow(max(0.,1.-d),2.2);gl_FragColor=vec4(mix(vC,vec3(1.),a*.7)*1.9,a*vA*uG);}'},additive)));
   parts.frustumCulled=false;parts.renderOrder=2;scene.add(parts);
 
   /* --- nút: thẻ (vẽ khi lần đầu cần hiện), quầng sáng, chấm thay thẻ khi nút nằm ngoài vùng chọn --- */
@@ -178,8 +180,8 @@ function initScene(){
   const dg=new THREE.BufferGeometry();{const p=[],c=[],s=[];nodes.forEach(n=>{const k=C(n.camp);p.push(n.x,n.y,n.z);c.push(k.r,k.g,k.b);s.push(9+Math.sqrt(n.deg)*3.2)});
     dg.setAttribute('position',F(p,3));dg.setAttribute('color',F(c,3));dg.setAttribute('aS',F(s,1));dg.setAttribute('aA',F(new Float32Array(nodes.length),1))}
   const dA=dg.attributes.aA,dots=new THREE.Points(dg,new THREE.ShaderMaterial(Object.assign({uniforms:{uPx},
-    vertexShader:'attribute vec3 color;attribute float aA,aS;uniform float uPx;varying vec3 vC;varying float vA;void main(){vec4 mv=modelViewMatrix*vec4(position,1.);vC=color;vA=aA*clamp(1.7+mv.z/650.,.15,1.);gl_PointSize=uPx*aS*(300./-mv.z);gl_Position=projectionMatrix*mv;}',
-    fragmentShader:'varying vec3 vC;varying float vA;void main(){float d=length(gl_PointCoord-.5)*2.;float a=pow(max(0.,1.-d),1.8);gl_FragColor=vec4(mix(vC,vec3(1.),a*.5),a*vA);}'},additive)));
+    vertexShader:'attribute vec3 color;attribute float aA,aS;uniform float uPx;varying vec3 vC;varying float vA;void main(){vec4 mv=modelViewMatrix*vec4(position,1.);vC=color;vA=aA*clamp(1.9+mv.z/520.,.12,1.);gl_PointSize=uPx*aS*(330./-mv.z);gl_Position=projectionMatrix*mv;}',
+    fragmentShader:'varying vec3 vC;varying float vA;void main(){float d=length(gl_PointCoord-.5)*2.;float a=pow(max(0.,1.-d),1.8);gl_FragColor=vec4(mix(vC,vec3(1.),a*.55)*1.7,a*vA);}'},additive)));
   dots.frustumCulled=false;dots.renderOrder=2;scene.add(dots);
   function paint(n){n.tex=true;n.sp.material.map=card(n);n.sp.material.needsUpdate=true;
     if(typeof IMG!=='undefined'&&IMG[n.id]){const im=new Image();im.onload=()=>{const o=n.sp.material.map;n.sp.material.map=card(n,im);o.dispose()};im.src=IMG[n.id]}}
@@ -189,18 +191,64 @@ function initScene(){
       const sp=new THREE.Sprite(new THREE.SpriteMaterial({transparent:true,opacity:0,alphaTest:.02}));sp.visible=false;sp.position.set(n.x,n.y,n.z);sp.userData.n=n;sp.renderOrder=3;n.sp=sp;scene.add(sp);sprites.push(sp);
       const gl=glowSprite({color:C(n.camp)});gl.position.copy(sp.position);const gs=n.h*(person?3.4:n.ar*1.25);gl.scale.set(gs,gs*(person?1:.5),1);gl.renderOrder=1;n.gl=gl;scene.add(gl)});
     ready=true;applyFx();refresh();frame(state.active)});
-  function applyFx(){halo.visible=q>0;galGlow.visible=q>0;rays.forEach(r=>r.visible=q>1);neb.forEach(s=>s.visible=q>0);galPts.geometry.setDrawRange(0,[1300,2000,2800][q])}
+  function applyFx(){post.setup();floor.visible=q>0;halo.visible=q>0;galGlow.visible=q>0;rays.forEach(r=>r.visible=q>1);neb.forEach(s=>s.visible=q>0);galPts.geometry.setDrawRange(0,[1300,2000,2800][q])}
+
+  /* --- chiều sâu: sàn lưới cực mờ dưới đồ thị, mỗi nút thả một cọc dọi xuống sàn để mắt đọc được độ cao và độ xa --- */
+  const floorY=Math.min.apply(null,nodes.map(n=>n.y))-52,floor=new THREE.Group();scene.add(floor);
+  {const p=[],c=[],K=new THREE.Color(0x3E63A8),R=620,seg=(x1,z1,x2,z2)=>{[[x1,z1],[x2,z2]].forEach(([x,z])=>{const f=Math.pow(Math.max(0,1-Math.hypot(x,z)/R),1.6);p.push(x,floorY,z);c.push(K.r*f,K.g*f,K.b*f)})};
+    for(let r=70;r<R;r+=70)for(let i=0;i<72;i++){const a=i/72*6.2832,b=(i+1)/72*6.2832;seg(r*Math.cos(a),r*Math.sin(a),r*Math.cos(b),r*Math.sin(b))}
+    for(let i=0;i<24;i++){const a=i/24*6.2832;for(let r=0;r<R;r+=70)seg(r*Math.cos(a),r*Math.sin(a),(r+70)*Math.cos(a),(r+70)*Math.sin(a))}
+    const g=new THREE.BufferGeometry();g.setAttribute('position',F(p,3));g.setAttribute('color',F(c,3));
+    const l=new THREE.LineSegments(g,new THREE.LineBasicMaterial(Object.assign({vertexColors:true,opacity:.55},additive)));l.renderOrder=0;floor.add(l)}
+  const sg=new THREE.BufferGeometry(),fg=new THREE.BufferGeometry();{const p=[],f=[];nodes.forEach(n=>{p.push(n.x,n.y,n.z,n.x,floorY,n.z);f.push(n.x,floorY,n.z)});
+    sg.setAttribute('position',F(p,3));sg.setAttribute('color',F(new Float32Array(nodes.length*6),3));fg.setAttribute('position',F(f,3));fg.setAttribute('color',F(new Float32Array(nodes.length*3),3))}
+  {const l=new THREE.LineSegments(sg,new THREE.LineBasicMaterial(Object.assign({vertexColors:true},additive)));l.renderOrder=0;floor.add(l);
+   const m=new THREE.Points(fg,new THREE.ShaderMaterial(Object.assign({uniforms:{uPx},
+    vertexShader:'attribute vec3 color;uniform float uPx;varying vec3 vC;void main(){vec4 mv=modelViewMatrix*vec4(position,1.);vC=color*clamp(1.9+mv.z/520.,.1,1.);gl_PointSize=uPx*7.*(330./-mv.z);gl_Position=projectionMatrix*mv;}',
+    fragmentShader:'varying vec3 vC;void main(){float d=length(gl_PointCoord-.5)*2.;gl_FragColor=vec4(vC*1.6,pow(max(0.,1.-d),2.));}'},additive)));m.frustumCulled=false;m.renderOrder=0;floor.add(m)}
+  function stems(act,t){const sc=sg.attributes.color,fc=fg.attributes.color;nodes.forEach((n,i)=>{const k=C(n.camp),w=n.since>t?0:act?(act.has(n.id)?.8:.05):.2,a=w*.06,b=w*.5;
+      sc.setXYZ(i*2,k.r*b,k.g*b,k.b*b);sc.setXYZ(i*2+1,k.r*a,k.g*a,k.b*a);fc.setXYZ(i,k.r*w,k.g*w,k.b*w)});sc.needsUpdate=fc.needsUpdate=true}
+
+  /* --- hậu kỳ HDR: cảnh vẽ vào bộ đệm 16 bit nên chỗ cộng sáng vượt quá 1 không bị cắt cụt. Phần vượt ngưỡng được làm nhòe qua nhiều tầng
+         thành quầng sáng, rồi cả khung hình đi qua đường cong tương phản và vai nén vùng sáng. Mức nhẹ tắt hẳn phần này. --- */
+  const post=(()=>{const P={on:false},gl2=renderer.capabilities.isWebGL2,hdr=gl2&&!!renderer.extensions.get('EXT_color_buffer_float'),type=hdr?THREE.HalfFloatType:THREE.UnsignedByteType;
+    const fcam=new THREE.OrthographicCamera(-1,1,1,-1,0,1),fsc=new THREE.Scene(),quad=new THREE.Mesh(new THREE.PlaneGeometry(2,2));quad.frustumCulled=false;fsc.add(quad);
+    const VS='varying vec2 vUv;void main(){vUv=uv;gl_Position=vec4(position.xy,0.,1.);}',M=(u,fs)=>new THREE.ShaderMaterial({uniforms:u,vertexShader:VS,fragmentShader:fs,depthTest:false,depthWrite:false});
+    const bright=M({tD:{value:null},uX:{value:new THREE.Vector2()}},'uniform sampler2D tD;uniform vec2 uX;varying vec2 vUv;void main(){vec3 c=(texture2D(tD,vUv+uX*vec2(.5,.5)).rgb+texture2D(tD,vUv+uX*vec2(-.5,.5)).rgb+texture2D(tD,vUv+uX*vec2(.5,-.5)).rgb+texture2D(tD,vUv+uX*vec2(-.5,-.5)).rgb)*.25;c=min(c,vec3(6.));float L=max(c.r,max(c.g,c.b));gl_FragColor=vec4(c*smoothstep(.62,1.3,L),1.);}');
+    const blur=M({tD:{value:null},uD:{value:new THREE.Vector2()}},'uniform sampler2D tD;uniform vec2 uD;varying vec2 vUv;void main(){vec3 c=texture2D(tD,vUv).rgb*.227;c+=(texture2D(tD,vUv+uD*1.3846).rgb+texture2D(tD,vUv-uD*1.3846).rgb)*.3162;c+=(texture2D(tD,vUv+uD*3.2308).rgb+texture2D(tD,vUv-uD*3.2308).rgb)*.0703;gl_FragColor=vec4(c,1.);}');
+    const W5=[.36,.27,.2,.16,.14],cu={tS:{value:null},uW:{value:[0,0,0,0,0]},uB:{value:1},uT:{value:0}};for(let i=0;i<5;i++)cu['t'+i]={value:null};
+    const comp=M(cu,'uniform sampler2D tS,t0,t1,t2,t3,t4;uniform float uW[5];uniform float uB,uT;varying vec2 vUv;'+
+      'float sh(float x){return x<.7?x:.7+.3*(1.-exp(-(x-.7)/.3));}'+
+      'void main(){vec3 c=texture2D(tS,vUv).rgb;vec3 b=texture2D(t0,vUv).rgb*uW[0]+texture2D(t1,vUv).rgb*uW[1]+texture2D(t2,vUv).rgb*uW[2]+texture2D(t3,vUv).rgb*uW[3]+texture2D(t4,vUv).rgb*uW[4];'+
+      'c=max(c+b*uB,0.)*1.1;c=.2*pow(c/.2,vec3(1.12));float L=max(c.r,max(c.g,c.b));if(L>.0001){float m=sh(L);c*=m/L;c=mix(c,vec3(m),smoothstep(1.,4.,L)*.7);}'+
+      'vec2 p=vUv-.5;c*=1.-dot(p,p)*.35;c+=(fract(sin(dot(gl_FragCoord.xy+uT,vec2(12.9898,78.233)))*43758.5453)-.5)/255.;gl_FragColor=vec4(c,1.);}');
+    let main=null,mips=[],w=0,h=0,lv=0,key='';const sz=new THREE.Vector2();
+    const opt=d=>({type,format:THREE.RGBAFormat,minFilter:THREE.LinearFilter,magFilter:THREE.LinearFilter,depthBuffer:d,stencilBuffer:false});
+    const kill=()=>{if(main)main.dispose();mips.forEach(m=>{m.a.dispose();m.b.dispose()});main=null;mips=[]};
+    P.setup=()=>{renderer.getDrawingBufferSize(sz);const k=q+'/'+sz.x+'/'+sz.y;if(k===key)return;key=k;kill();P.on=q>0&&sz.x>8&&sz.y>8;if(!P.on)return;w=sz.x;h=sz.y;lv=q>1?5:3;
+      if(q>1&&gl2){main=new THREE.WebGLMultisampleRenderTarget(w,h,opt(true));main.samples=4}else main=new THREE.WebGLRenderTarget(w,h,opt(true));
+      for(let i=0;i<lv;i++){const mw=Math.max(2,w>>(i+1)),mh=Math.max(2,h>>(i+1));mips.push({a:new THREE.WebGLRenderTarget(mw,mh,opt(false)),b:new THREE.WebGLRenderTarget(mw,mh,opt(false)),w:mw,h:mh})}
+      for(let i=0;i<5;i++){cu['t'+i].value=mips[Math.min(i,lv-1)].a.texture;cu.uW.value[i]=i<lv?W5[i]*(lv<5?1.3:1):0}cu.tS.value=main.texture};
+    const pass=(mat,rt)=>{quad.material=mat;renderer.setRenderTarget(rt);renderer.render(fsc,fcam)};
+    P.render=t=>{P.setup();if(!P.on){renderer.render(scene,cam);return}
+      renderer.setRenderTarget(main);renderer.render(scene,cam);
+      bright.uniforms.tD.value=main.texture;bright.uniforms.uX.value.set(1/w,1/h);pass(bright,mips[0].b);
+      for(let i=0;i<lv;i++){const m=mips[i],src=i?mips[i-1].a:m.b,dst=i?m.b:m.a;
+        if(i){blur.uniforms.tD.value=src.texture;blur.uniforms.uD.value.set(1/m.w,0);pass(blur,m.b);blur.uniforms.tD.value=m.b.texture;blur.uniforms.uD.value.set(0,1/m.h);pass(blur,m.a)}
+        else{blur.uniforms.tD.value=m.b.texture;blur.uniforms.uD.value.set(1/m.w,0);pass(blur,m.a);blur.uniforms.tD.value=m.a.texture;blur.uniforms.uD.value.set(0,1/m.h);pass(blur,m.b);const x=m.a;m.a=m.b;m.b=x;cu.t0.value=m.a.texture;if(lv===1)for(let j=1;j<5;j++)cu['t'+j].value=m.a.texture}}
+      cu.uT.value=still?0:t%10;pass(comp,null)};
+    P.hdr=hdr;return P})();
 
   /* --- đồng bộ cảnh với trạng thái: nút nào hiện thẻ, quan hệ nào sáng --- */
-  let baseT=.13,nebT=.08;
+  let baseT=.26,nebT=.08;
   function refresh(){if(!ready)return;const act=state.active,H=hot(),t=state.time;
     if(baseTime!==t){baseTime=t;const o=base.children[0].material.opacity;scene.remove(base);base.children.forEach(l=>{l.geometry.dispose();l.material.dispose()});
       base=lines(edges.filter(e=>e.since<=t));base.children.forEach(l=>l.material.opacity=o);scene.add(base)}
     nodes.forEach(n=>{const vis=n.since<=t,fresh=!act&&t>0&&t<11&&n.since===t;n.on=vis&&(!act||act.has(n.id));
-      n.tg=n===H?.9:fresh?.6:act?(n.on?.42:0):(n.deg>=6?.12:0);n.td=vis&&!n.on?.14:0});
+      n.tg=n===H?1:fresh?.7:act?(n.on?.5:0):(n.deg>=6?.2:0);n.td=vis&&!n.on?.3:0});
     let list=state.sel?edges.filter(e=>e.s===state.sel||e.t===state.sel):act?edges.filter(e=>act.has(e.s.id)&&act.has(e.t.id)):[];
     list=list.filter(e=>state.tiers[e.tier]&&e.since<=t);const lit=new Set(list);
-    base.children.forEach(l=>l.visible=state.tiers[l.userData.tier]);baseT=act?.03:.13;nebT=act?.03:.08;tubes(list);uF.value=0;
+    base.children.forEach(l=>l.visible=state.tiers[l.userData.tier]);baseT=act?.06:.26;nebT=act?.03:.08;stems(act,t);tubes(list);uF.value=0;
     const a=pg.attributes.aA;edges.forEach((e,i)=>a.setX(i,!state.tiers[e.tier]||e.since>t?0:act?(lit.has(e)?1:0):(q>0?.3:0)));a.needsUpdate=true;
     if(H){ping.material.map=ring[H.type==='person'?'person':'tile'];ping.material.color=C(H.camp);ping.position.set(H.x,H.y,H.z);flare.position.copy(ping.position);flare.material.color=C(H.camp);flare.scale.set(H.h*11,H.h*.9,1)}}
 
@@ -235,22 +283,23 @@ function initScene(){
     if(!still)uT.value=t;
     if(goal.on){ctl.target.lerp(goal.t,k2*.9);const dir=cam.position.clone().sub(ctl.target),d=dir.length();dir.setLength(d+(goal.d-d)*k2*.9);cam.position.copy(ctl.target).add(dir);
       if(ctl.target.distanceTo(goal.t)<.4&&Math.abs(d-goal.d)<1)goal.on=false}
+    const camD=cam.position.distanceTo(ctl.target);scene.fog.near=Math.max(60,camD-40);scene.fog.far=camD+820;
     if(ready){const H=hot();
       if(pm){state.hover=pick(pm);canvas.style.cursor=state.hover?'pointer':'';pm=null}
       let budget=4;
       nodes.forEach((n,i)=>{const want=n.on||n===state.hover;if(want&&!n.tex&&budget>0){budget--;paint(n)}
         n.o+=((want&&n.tex?1:0)-n.o)*k;n.k+=((n===H?1.2:n===state.hover?1.09:1)-n.k)*k;n.g+=(n.tg-n.g)*k;n.da+=((n===state.hover?0:n.td)-n.da)*k;dA.setX(i,n.da);
-        n.sp.visible=n.o>.02;n.sp.material.opacity=n.o;n.sp.scale.set(n.h*n.ar*n.k,n.h*n.k,1);n.gl.visible=n.g>.01;n.gl.material.opacity=n.g*(n===state.sel&&!still?.8+.2*Math.sin(t*2.4):1)});
+        n.sp.visible=n.o>.02;n.sp.material.opacity=n.o;{const dz=camD-Math.hypot(n.x-cam.position.x,n.y-cam.position.y,n.z-cam.position.z),b=1.12+.3*Math.max(-.6,Math.min(1,dz/200))+(n===H?.16:n===state.hover?.1:0);n.sp.material.color.setScalar(b)}n.sp.scale.set(n.h*n.ar*n.k,n.h*n.k,1);n.gl.visible=n.g>.01;n.gl.material.opacity=n.g*(n===state.sel&&!still?.8+.2*Math.sin(t*2.4):1)});
       dA.needsUpdate=true;
       base.children.forEach(l=>{l.material.opacity+=(baseT-l.material.opacity)*k});neb.forEach(s=>{s.material.opacity+=(nebT-s.material.opacity)*k});
       uF.value+=(1-uF.value)*k2;parts.material.uniforms.uG.value+=(1-parts.material.uniforms.uG.value)*k2*.5;
-      flare.material.opacity+=((H?.3:0)-flare.material.opacity)*k;
+      flare.material.opacity+=((H?.5:0)-flare.material.opacity)*k;
       if(H){const u=still?.3:(t*.55)%1,s=1.04+u*.42;ping.scale.set(H.h*H.ar*s*1.2,H.h*1.2*(1+(s-1)*(H.type==='person'?1:H.ar*.8)),1);ping.material.opacity=(1-u)*(1-u)*.6}else ping.material.opacity=0;
       if(!still){gal.rotation.y+=dt*.0025;meteor(t);rays.forEach((r,i)=>{r.material.rotation+=dt*.004*(i%2?1:-1)});
         if(!coarse&&!goal.on){scene.rotation.y+=(mouse.x*.02-scene.rotation.y)*k*.35;scene.rotation.x+=(-mouse.y*.012-scene.rotation.x)*k*.35}}
       fps+=(1/Math.max(dt,.004)-fps)*.06;
       if(qAuto&&q>0){if(fc>=0)acc+=dt;if(++fc===90){if(acc/90>.03){q--;applyQuality();applyFx();refresh()}acc=0;fc=0}}}
-    ctl.update();renderer.render(scene,cam)})();
+    ctl.update();if(post.on)post.render(t);else renderer.render(scene,cam)})();
   return {refresh,frame,fly:(n,d)=>fly(V(n),d),info:()=>({q,fps,auto:qAuto}),setQuality(m){qAuto=m<0;q=m<0?q0:m;applyQuality();applyFx();refresh();acc=0;fc=-60}};
 }
 
